@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\Home\Index as Home;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('lading_page');
-});
+Route::get('/', Home::class)->name('lading.page');
