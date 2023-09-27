@@ -1,0 +1,22 @@
+on: 
+push:
+  branches:
+    - main
+name: 🚀 Deploy website on push
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v3
+
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.URL_HOSTGATOR_FF }}
+        username: ${{ secrets.USE_HOSTGATOR_FF }}
+        password: ${{ secrets.PWD_HOSTGATOR_FF }}
+        protocol: ftps
+        port: ${{ secrets.PORT_HOSTGATOR_FF }} # todo replace with your web hosts ftps port
+        server-dir: america360.fabianofernandes.adm.br
