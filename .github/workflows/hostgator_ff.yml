@@ -1,8 +1,5 @@
+on: push
 name: 🚀 Deploy website on push
-on:
-  push:
-    branches:
-      - main
 jobs:
   web-deploy:
     name: 🎉 Deploy
@@ -16,7 +13,6 @@ jobs:
       with:
         server: ${{ secrets.URL_HOSTGATOR_FF}}
         username: ${{ secrets.USER_HOSTGATOR_FF}}
-        password: ${{ secrets.PWD_HOSTGATOR_FF}}  
+        password: ${{ secrets.PWD_HOSTGATOR_FF}} 
         port: ${{ secrets.PORT_HOSTGATOR_FF }} 
-        server-dir: america360.fabianofernandes.adm.br    
-
+        server-dir: america360.fabianofernandes.adm.br  
