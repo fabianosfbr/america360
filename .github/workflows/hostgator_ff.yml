@@ -15,4 +15,4 @@ jobs:
         username: ${{ secrets.USER_HOSTGATOR_FF}}
         password: ${{ secrets.PWD_HOSTGATOR_FF}} 
         port: ${{ secrets.PORT_HOSTGATOR_FF }} 
-        server-dir: america360.fabianofernandes.adm.br  
+        server-dir: america360.fabianofernandes.adm.br/  
