@@ -1,4 +1,7 @@
-on: push
+on:
+  push:
+    branches:
+      - main
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
@@ -7,7 +10,10 @@ jobs:
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v3
-    
+    - name: Install Dependencies
+      run: composer update --ignore-platform-reqs     
+    - name: Directory Permissions
+      run: chmod -R 777 storage bootstrap/cache           
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
@@ -15,4 +21,4 @@ jobs:
         username: ${{ secrets.USER_HOSTGATOR_FF}}
         password: ${{ secrets.PWD_HOSTGATOR_FF}} 
         port: ${{ secrets.PORT_HOSTGATOR_FF }} 
-        server-dir: america360.fabianofernandes.adm.br/  
+  
