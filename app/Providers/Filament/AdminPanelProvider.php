@@ -29,6 +29,7 @@ class AdminPanelProvider extends PanelProvider
             ->login()
             ->darkMode(false)
             ->topNavigation()
+            ->brandLogo(asset('images/logo.png'))
             ->colors([
                 'primary' => Color::Blue,
             ])
