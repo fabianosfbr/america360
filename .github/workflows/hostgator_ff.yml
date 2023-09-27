@@ -21,4 +21,10 @@ jobs:
         username: ${{ secrets.USER_HOSTGATOR_FF}}
         password: ${{ secrets.PWD_HOSTGATOR_FF}} 
         port: ${{ secrets.PORT_HOSTGATOR_FF }} 
+    - name: Run migrations
+      run: php artisan migrate --force         
+    - name: Clear config cache
+      run: php artisan config:cache         
+    - name: Optimize clear
+      run: php artisan optimize:clear        
   
