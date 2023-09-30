@@ -13,17 +13,11 @@ return new class extends Migration
     {
         Schema::create('newsletters', function (Blueprint $table) {
             $table->id();
-<<<<<<< HEAD
-=======
             $table->string('name');
             $table->string('email');
             $table->string('phone', 20);
             $table->softDeletes();
->>>>>>> 1147288 (refactor: remoção de comentários)
-            $table->string('name');
-            $table->string('email');
-            $table->string('phone', 20);
-            $table->softDeletes();
+
             $table->timestamps();
         });
     }
