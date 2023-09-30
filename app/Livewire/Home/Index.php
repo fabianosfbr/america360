@@ -29,17 +29,11 @@ class Index extends Component
     {
         $this->validate();
 
-<<<<<<< HEAD
-        session()->flash('status', 'Os dados foram enviados com sucesso!');
-
-        $this->name = $this->email = $this->phone = null;
-=======
         $newsletter = Newsletter::castAndCreate([
             'name' => $this->name,
             'email' => $this->email,
             'phone' => $this->phone,
         ]);
->>>>>>> 1147288 (refactor: remoção de comentários)
 
         if ($newsletter) {
             session()->flash('status', 'Os dados foram enviados com sucesso!');
