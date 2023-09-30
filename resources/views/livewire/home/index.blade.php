@@ -104,7 +104,8 @@
                         @if (session('status'))
                             <div
                                 class="relative my-4 block rounded-md border border-emerald-600/10 bg-emerald-600/10 px-4 py-2 font-medium text-emerald-600">
-                                {{ session('status') }}</div>
+                                {{ session('status') }}
+                            </div>
                         @endif
                         <h4 class="mb-5 text-2xl font-semibold">Quero fazer parte!</h4>
 

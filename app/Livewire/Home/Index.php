@@ -28,6 +28,7 @@ class Index extends Component
         $this->validate();
 
         session()->flash('status', 'Os dados foram enviados com sucesso!');
+
         $this->name = $this->email = $this->phone = null;
 
         //dd($this->name, $this->email, $this->phone);
