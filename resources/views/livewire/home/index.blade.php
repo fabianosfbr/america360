@@ -57,11 +57,6 @@
                     <span class="h-5 rounded bg-indigo-600/5 px-2.5 py-0.5 text-xs font-bold text-indigo-600">Nova
                         geração</span>
 
-                    {{-- <h4 class="mb-5 mt-2 text-4xl font-semibold leading-normal lg:text-4xl lg:leading-normal">
-                        Faça parte da nova geração.<br /> Entre para a próxima turma
-                        com bônus exclusivo
-                    </h4> --}}
-
                     <h1
                         class="font-display mx-auto max-w-3xl text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
                         Inglês inovador,
@@ -77,24 +72,7 @@
                         e divertido .
                     </h1>
 
-                    {{-- <p class="max-w-xl text-lg text-slate-400">Faça parte da nova geração. Entre para a próxima turma
-                        com bônus exclusivo.</p> --}}
 
-                    {{-- <div class="relative mt-10">
-                        <a href=""
-                            class="me-1 inline-block rounded-full border border-indigo-600 bg-indigo-600 px-5 py-2 text-center align-middle text-base font-semibold tracking-wide text-white duration-500 hover:border-indigo-700 hover:bg-indigo-700">Get
-                            Started</a>
-                        <a href="#!" data-type="youtube" data-id="S_CGed6E610"
-                            class="lightbox inline-flex h-12 w-12 items-center justify-center rounded-full border-indigo-600 bg-indigo-600 text-center align-middle text-base tracking-wide text-white duration-500 hover:border-indigo-700 hover:bg-indigo-700">
-
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                stroke-width="1.5" stroke="currentColor" class="h-6 w-6 align-middle">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
-                            </svg>
-
-                        </a><small class="ms-2 align-middle text-sm font-bold uppercase">Watch Now</small>
-                    </div> --}}
                 </div>
 
                 <div class="lg:col-span-5">
@@ -107,6 +85,7 @@
                                 {{ session('status') }}
                             </div>
                         @endif
+
                         <h4 class="mb-5 text-2xl font-semibold">Quero fazer parte!</h4>
 
                         <div class="grid grid-cols-1">
