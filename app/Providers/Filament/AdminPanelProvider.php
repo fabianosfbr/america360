@@ -28,8 +28,10 @@ class AdminPanelProvider extends PanelProvider
             ->path('admin')
             ->login()
             ->darkMode(false)
-            ->topNavigation()
+            //->topNavigation()
             ->brandLogo(asset('images/logo.png'))
+            ->font('Poppins')
+            //->font('Nunito')
             ->colors([
                 'primary' => Color::Blue,
             ])
