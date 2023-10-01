@@ -25,13 +25,13 @@ class AdminPanelProvider extends PanelProvider
         return $panel
             ->default()
             ->id('admin')
-            ->path('admin')
+            ->path('app')
             ->login()
             ->darkMode(false)
-            //->topNavigation()
+            ->topNavigation()
             ->brandLogo(asset('images/logo.png'))
-            ->font('Poppins')
-            //->font('Nunito')
+            //->font('Poppins')
+            ->font('Nunito')
             ->colors([
                 'primary' => Color::Blue,
             ])
