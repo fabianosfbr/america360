@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Filament\Resources\Admin\NewsletterResource\Pages;
+namespace App\Filament\Resources\NewsletterResource\Pages;
 
 use Closure;
 use Filament\Actions;
@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 use Filament\Resources\Pages\ListRecords;
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Database\Eloquent\Builder;
-use App\Filament\Resources\Admin\NewsletterResource;
+use App\Filament\Resources\NewsletterResource;
 
 class ListNewsletters extends ListRecords
 {

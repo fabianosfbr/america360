@@ -25,7 +25,7 @@ class AdminPanelProvider extends PanelProvider
         return $panel
             ->default()
             ->id('admin')
-            ->path('app')
+            ->path('admin')
             ->login()
             ->darkMode(false)
             ->topNavigation()

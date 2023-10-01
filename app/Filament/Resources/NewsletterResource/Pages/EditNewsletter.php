@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Filament\Resources\Admin\NewsletterResource\Pages;
+namespace App\Filament\Resources\NewsletterResource\Pages;
 
-use App\Filament\Resources\Admin\NewsletterResource;
+use App\Filament\Resources\NewsletterResource;
 use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
 

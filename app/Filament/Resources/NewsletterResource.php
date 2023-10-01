@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Filament\Resources\Admin;
+namespace App\Filament\Resources;
 
-use App\Filament\Resources\Admin\NewsletterResource\Pages;
-use App\Filament\Resources\Admin\NewsletterResource\RelationManagers;
+use App\Filament\Resources\NewsletterResource\Pages;
+use App\Filament\Resources\NewsletterResource\RelationManagers;
 use App\Models\Newsletter;
 use Filament\Forms;
 use Filament\Forms\Form;
