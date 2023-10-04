@@ -160,13 +160,12 @@
     <section class="relative py-16 md:py-24">
         <div class="container relative">
             <div class="grid grid-cols-1 pb-8 text-center">
-                <h6 class="mb-2 text-sm font-bold uppercase text-indigo-600">Features</h6>
-                <h3 class="mb-4 text-2xl font-semibold leading-normal md:text-3xl md:leading-normal">Business
-                    strategies
-                    and top <br> permormance ideas</h3>
+                <h6 class="mb-2 text-sm font-bold text-indigo-600">Junte-se a mais de 40 mil alunos</h6>
+                <h3 class="mb-4 text-2xl font-semibold leading-normal md:text-3xl md:leading-normal">Chegou a hora de
+                    falar inglês! <br> Aprenda com os melhores professores.</h3>
 
-                <p class="mx-auto max-w-xl text-slate-400">Start working with Tailwind CSS that can provide everything
-                    you need to generate awareness, drive traffic, connect.</p>
+                <p class="mx-auto max-w-xl text-slate-400">Junte-se à America360 e embarque na jornada para a fluência
+                    em inglês.</p>
             </div>
             <!--end grid-->
 
@@ -174,28 +173,103 @@
                 <div class="group text-center">
                     <div
                         class="mx-auto flex h-20 w-20 rotate-45 items-center justify-center rounded-lg bg-indigo-600/5 align-middle text-indigo-600 shadow-sm dark:shadow-gray-800">
+
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                             stroke-width="1.5" stroke="currentColor" class="h-6 w-6 rotate-[-45deg]">
                             <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z" />
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z" />
+                                d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
                         </svg>
+
 
                     </div>
 
                     <div class="mt-8">
                         <a href="page-services.html"
-                            class="title h5 text-lg font-medium hover:text-indigo-600">Profitable Marketing</a>
+                            class="title h5 text-lg font-medium hover:text-indigo-600">Instrutores qualificados</a>
 
-                        <p class="mt-4 text-slate-400">We develop digital strategies, products and services appreciated
-                            by clients.</p>
+                        <p class="mt-4 text-slate-400">Todos os nossos instrutores são falantes nativos de inglês com
+                            vasta experiência no ensino do idioma.</p>
 
-                        <div class="mt-4">
-                            <a href=""
-                                class="relative inline-block border-none text-center align-middle text-base font-semibold tracking-wide duration-500 ease-in-out after:absolute after:bottom-0 after:end-0 after:start-0 after:h-px after:w-0 after:bg-indigo-600 after:duration-500 after:content-[''] hover:text-indigo-600 hover:after:end-auto hover:after:w-full">Read
-                                More <i class="uil uil-arrow-right align-middle"></i></a>
-                        </div>
+
+                    </div>
+                </div>
+                <!-- Feature End -->
+
+                <div class="group text-center">
+                    <div
+                        class="mx-auto flex h-20 w-20 rotate-45 items-center justify-center rounded-lg bg-indigo-600/5 align-middle text-indigo-600 shadow-sm dark:shadow-gray-800">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="h-6 w-6 rotate-[-45deg]">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" />
+                        </svg>
+
+
+                    </div>
+
+                    <div class="mt-8">
+                        <a href="page-services.html" class="title h5 text-lg font-medium hover:text-indigo-600">Aulas
+                            ao vivo</a>
+
+                        <p class="mt-4 text-slate-400">As aulas são realizadas em tempo real, permitindo a interação
+                            direta entre os alunos e os instrutores.</p>
+
+
+                    </div>
+                </div>
+                <!-- Feature End -->
+
+                <div class="group text-center">
+                    <div
+                        class="mx-auto flex h-20 w-20 rotate-45 items-center justify-center rounded-lg bg-indigo-600/5 align-middle text-indigo-600 shadow-sm dark:shadow-gray-800">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="h-6 w-6 rotate-[-45deg]">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25zm.75-12h9v9h-9v-9z" />
+                        </svg>
+
+
+                    </div>
+
+                    <div class="mt-8">
+                        <a href="page-services.html"
+                            class="title h5 text-lg font-medium hover:text-indigo-600">Conteúdo personalizado</a>
+
+                        <p class="mt-4 text-slate-400">Os cursos são adaptados às necessidades e objetivos individuais
+                            de cada aluno.</p>
+
+
+                    </div>
+                </div>
+                <!-- Feature End -->
+            </div>
+
+            <div class="mt-8 grid grid-cols-1 gap-[30px] md:grid-cols-3">
+                <div class="group text-center">
+                    <div
+                        class="mx-auto flex h-20 w-20 rotate-45 items-center justify-center rounded-lg bg-indigo-600/5 align-middle text-indigo-600 shadow-sm dark:shadow-gray-800">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="h-6 w-6 rotate-[-45deg]">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3" />
+                        </svg>
+
+
+                    </div>
+
+                    <div class="mt-8">
+                        <a href="page-services.html"
+                            class="title h5 text-lg font-medium hover:text-indigo-600">Material didático de
+                            qualidade</a>
+
+                        <p class="mt-4 text-slate-400">Fornecemos materiais didáticos atualizados, incluindo livros
+                            digitais, exercícios interativos e recursos multimídia.</p>
+
+
                     </div>
                 </div>
                 <!-- Feature End -->
@@ -212,17 +286,13 @@
                     </div>
 
                     <div class="mt-8">
-                        <a href="page-services.html" class="title h5 text-lg font-medium hover:text-indigo-600">SEO
-                            Specialists</a>
+                        <a href="page-services.html" class="title h5 text-lg font-medium hover:text-indigo-600">Acesso
+                            24/7</a>
 
-                        <p class="mt-4 text-slate-400">We develop digital strategies, products and services appreciated
-                            by clients.</p>
+                        <p class="mt-4 text-slate-400">Os alunos têm acesso ao conteúdo e atividades do curso a
+                            qualquer momento, permitindo que estudem de acordo com sua própria programação.</p>
 
-                        <div class="mt-4">
-                            <a href=""
-                                class="relative inline-block border-none text-center align-middle text-base font-semibold tracking-wide duration-500 ease-in-out after:absolute after:bottom-0 after:end-0 after:start-0 after:h-px after:w-0 after:bg-indigo-600 after:duration-500 after:content-[''] hover:text-indigo-600 hover:after:end-auto hover:after:w-full">Read
-                                More <i class="uil uil-arrow-right align-middle"></i></a>
-                        </div>
+
                     </div>
                 </div>
                 <!-- Feature End -->
@@ -240,17 +310,12 @@
 
                     <div class="mt-8">
                         <a href="page-services.html"
-                            class="title h5 text-lg font-medium hover:text-indigo-600">Audience
-                            Analysis</a>
+                            class="title h5 text-lg font-medium hover:text-indigo-600">Suporte individualizado</a>
 
-                        <p class="mt-4 text-slate-400">We develop digital strategies, products and services appreciated
-                            by clients.</p>
+                        <p class="mt-4 text-slate-400">Nossos instrutores estão disponíveis para fornecer suporte
+                            individualizado e feedback regularmente.</p>
 
-                        <div class="mt-4">
-                            <a href=""
-                                class="relative inline-block border-none text-center align-middle text-base font-semibold tracking-wide duration-500 ease-in-out after:absolute after:bottom-0 after:end-0 after:start-0 after:h-px after:w-0 after:bg-indigo-600 after:duration-500 after:content-[''] hover:text-indigo-600 hover:after:end-auto hover:after:w-full">Read
-                                More <i class="uil uil-arrow-right align-middle"></i></a>
-                        </div>
+
                     </div>
                 </div>
                 <!-- Feature End -->
@@ -281,16 +346,14 @@
 
                 <div class="md:col-span-7">
                     <div class="lg:ms-4">
-                        <h4 class="mb-6 text-2xl font-medium leading-normal md:text-3xl lg:leading-normal">We are the
-                            largest <br> Business expert </h4>
-                        <p class="max-w-xl text-slate-400">Start working with Tailwind CSS that can provide everything
-                            you need to generate awareness, drive traffic, connect. Dummy text is text that is used in
-                            the publishing industry or by web designers to occupy the space which will later be filled
-                            with 'real' content. This is required when, for example, the final text is not yet
-                            available. Dummy texts have been in use by typesetters since the 16th century.</p>
-                        <a href=""
-                            class="mt-3 inline-block rounded-md border border-indigo-600 bg-indigo-600 px-5 py-2 text-center align-middle text-base font-semibold tracking-wide text-white duration-500 hover:border-indigo-700 hover:bg-indigo-700">Buy
-                            Now <i class="mdi mdi-chevron-right align-middle"></i></a>
+                        <h4 class="mb-6 text-2xl font-medium leading-normal md:text-3xl lg:leading-normal">Sobre Nós </h4>
+                        <p class="max-w-xl text-slate-400">
+                            Somos uma escola de inglês on-line especializada em oferecer cursos de qualidade para
+                            estudantes de todas as idades e níveis de fluência. Nossa missão é proporcionar aos alunos
+                            uma experiência de aprendizagem interativa, personalizada e flexível, tornando o estudo do
+                            inglês mais acessível e conveniente.
+                        </p>
+
                     </div>
                 </div>
                 <!--end col-->
@@ -301,204 +364,183 @@
 
         <div class="container relative mt-16 md:mt-24">
             <div class="grid grid-cols-1 pb-8 text-center">
-                <h3 class="mb-6 text-2xl font-semibold leading-normal md:text-3xl md:leading-normal">Key Features</h3>
+                <h3 class="mb-6 text-2xl font-semibold leading-normal md:text-3xl md:leading-normal">Nossos Cursos
+                </h3>
 
-                <p class="mx-auto max-w-xl text-slate-400">Start working with Tailwind CSS that can provide everything
-                    you need to generate awareness, drive traffic, connect.</p>
+
             </div>
             <!--end grid-->
 
-            <div class="mt-8 grid grid-cols-1 gap-[30px] md:grid-cols-12">
-                <div class="md:col-span-6 lg:col-span-4">
-                    <div
-                        class="flex items-center rounded-md bg-white p-3 shadow duration-500 ease-in-out hover:scale-105 hover:shadow-md dark:bg-slate-900 dark:shadow-gray-800 dark:hover:shadow-gray-700">
-                        <div
-                            class="me-3 flex h-[45px] min-w-[45px] -rotate-45 items-center justify-center rounded-full bg-gradient-to-r from-transparent to-indigo-600/10 text-center text-indigo-600">
-                            <x-feathericon-monitor class="rotate-45" />
+            <div class="relative mx-auto mt-4 max-w-7xl px-4 pb-16 sm:px-6 sm:pb-24 lg:px-8">
+                <div class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+                    <div class="relative pl-16">
+                        <div class="text-base font-semibold leading-7 text-gray-900">
+                            <div
+                                class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                                <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
+                                </svg>
+                            </div>
+                            Inglês Básico
                         </div>
-                        <div class="flex-1">
-                            <h4 class="mb-0 text-lg font-medium">Fully Responsive</h4>
+                        <div class="mt-2 text-base leading-7 text-gray-600">Este curso é ideal para iniciantes que desejam aprender os fundamentos da língua inglesa, como vocabulário básico, estruturas gramaticais simples e habilidades de conversação.</div>
+                    </div>
+                    <div class="relative pl-16">
+                        <div class="text-base font-semibold leading-7 text-gray-900">
+                            <div
+                                class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                                <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                </svg>
+                            </div>
+                            Inglês Intermediário
                         </div>
+                        <div class="mt-2 text-base leading-7 text-gray-600">Projetado para estudantes que já possuem conhecimentos básicos do inglês, o curso intermediário ajuda a aprimorar habilidades de comunicação em situações cotidianas e permite maior compreensão de textos e diálogos.</div>
+                    </div>
+                    <div class="relative pl-16">
+                        <div class="text-base font-semibold leading-7 text-gray-900">
+                            <div
+                                class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                                <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+                                </svg>
+                            </div>
+                            Inglês Avançado
+                        </div>
+                        <div class="mt-2 text-base leading-7 text-gray-600">Este curso é voltado para alunos com habilidades avançadas no idioma, oferecendo a oportunidade de aprimorar o vocabulário, a gramática e a fluência oral. Desafios de escrita e leitura também são abordados.</div>
+                    </div>
+                    <div class="relative pl-16">
+                        <div class="text-base font-semibold leading-7 text-gray-900">
+                            <div
+                                class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                                <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M7.864 4.243A7.5 7.5 0 0119.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 004.5 10.5a7.464 7.464 0 01-1.15 3.993m1.989 3.559A11.209 11.209 0 008.25 10.5a3.75 3.75 0 117.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 01-3.6 9.75m6.633-4.596a18.666 18.666 0 01-2.485 5.33" />
+                                </svg>
+                            </div>
+                            Preparação para Exames
+                        </div>
+                        <div class="mt-2 text-base leading-7 text-gray-600">Oferecemos cursos especiais para preparação de exames como TOEFL, IELTS, Cambridge e outros. Esses cursos são projetados para ajudar os alunos a alcançar pontuações mais altas e melhorar suas chances de sucesso.</div>
                     </div>
                 </div>
 
-                <div class="md:col-span-6 lg:col-span-4">
-                    <div
-                        class="flex items-center rounded-md bg-white p-3 shadow duration-500 ease-in-out hover:scale-105 hover:shadow-md dark:bg-slate-900 dark:shadow-gray-800 dark:hover:shadow-gray-700">
-                        <div
-                            class="me-3 flex h-[45px] min-w-[45px] -rotate-45 items-center justify-center rounded-full bg-gradient-to-r from-transparent to-indigo-600/10 text-center text-indigo-600">
-                            <x-feathericon-heart class="rotate-45" />
-                        </div>
-                        <div class="flex-1">
-                            <h4 class="mb-0 text-lg font-medium">Browser Compatibility</h4>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="md:col-span-6 lg:col-span-4">
-                    <div
-                        class="flex items-center rounded-md bg-white p-3 shadow duration-500 ease-in-out hover:scale-105 hover:shadow-md dark:bg-slate-900 dark:shadow-gray-800 dark:hover:shadow-gray-700">
-                        <div
-                            class="me-3 flex h-[45px] min-w-[45px] -rotate-45 items-center justify-center rounded-full bg-gradient-to-r from-transparent to-indigo-600/10 text-center text-indigo-600">
-                            <x-feathericon-eye class="rotate-45" />
-                        </div>
-                        <div class="flex-1">
-                            <h4 class="mb-0 text-lg font-medium">Retina Ready</h4>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="md:col-span-6 lg:col-span-4">
-                    <div
-                        class="flex items-center rounded-md bg-white p-3 shadow duration-500 ease-in-out hover:scale-105 hover:shadow-md dark:bg-slate-900 dark:shadow-gray-800 dark:hover:shadow-gray-700">
-                        <div
-                            class="me-3 flex h-[45px] min-w-[45px] -rotate-45 items-center justify-center rounded-full bg-gradient-to-r from-transparent to-indigo-600/10 text-center text-indigo-600">
-                            <x-feathericon-layout class="rotate-45" />
-                        </div>
-                        <div class="flex-1">
-                            <h4 class="mb-0 text-lg font-medium">Based On Tailwindcss 3</h4>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="md:col-span-6 lg:col-span-4">
-                    <div
-                        class="flex items-center rounded-md bg-white p-3 shadow duration-500 ease-in-out hover:scale-105 hover:shadow-md dark:bg-slate-900 dark:shadow-gray-800 dark:hover:shadow-gray-700">
-                        <div
-                            class="me-3 flex h-[45px] min-w-[45px] -rotate-45 items-center justify-center rounded-full bg-gradient-to-r from-transparent to-indigo-600/10 text-center text-indigo-600">
-                            <x-feathericon-feather class="rotate-45" />
-                        </div>
-                        <div class="flex-1">
-                            <h4 class="mb-0 text-lg font-medium">Feather Icons</h4>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="md:col-span-6 lg:col-span-4">
-                    <div
-                        class="flex items-center rounded-md bg-white p-3 shadow duration-500 ease-in-out hover:scale-105 hover:shadow-md dark:bg-slate-900 dark:shadow-gray-800 dark:hover:shadow-gray-700">
-                        <div
-                            class="me-3 flex h-[45px] min-w-[45px] -rotate-45 items-center justify-center rounded-full bg-gradient-to-r from-transparent to-indigo-600/10 text-center text-indigo-600">
-                            <x-feathericon-code class="rotate-45" />
-                        </div>
-                        <div class="flex-1">
-                            <h4 class="mb-0 text-lg font-medium">Built With SASS</h4>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="md:col-span-6 lg:col-span-4">
-                    <div
-                        class="flex items-center rounded-md bg-white p-3 shadow duration-500 ease-in-out hover:scale-105 hover:shadow-md dark:bg-slate-900 dark:shadow-gray-800 dark:hover:shadow-gray-700">
-                        <div
-                            class="me-3 flex h-[45px] min-w-[45px] -rotate-45 items-center justify-center rounded-full bg-gradient-to-r from-transparent to-indigo-600/10 text-center text-indigo-600">
-                            <x-feathericon-user-check class="rotate-45" />
-                        </div>
-                        <div class="flex-1">
-                            <h4 class="mb-0 text-lg font-medium">W3c Valid Code</h4>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="md:col-span-6 lg:col-span-4">
-                    <div
-                        class="flex items-center rounded-md bg-white p-3 shadow duration-500 ease-in-out hover:scale-105 hover:shadow-md dark:bg-slate-900 dark:shadow-gray-800 dark:hover:shadow-gray-700">
-                        <div
-                            class="me-3 flex h-[45px] min-w-[45px] -rotate-45 items-center justify-center rounded-full bg-gradient-to-r from-transparent to-indigo-600/10 text-center text-indigo-600">
-                            <x-feathericon-globe class="rotate-45" />
-                        </div>
-                        <div class="flex-1">
-                            <h4 class="mb-0 text-lg font-medium">Browsers Compatible</h4>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="md:col-span-6 lg:col-span-4">
-                    <div
-                        class="flex items-center rounded-md bg-white p-3 shadow duration-500 ease-in-out hover:scale-105 hover:shadow-md dark:bg-slate-900 dark:shadow-gray-800 dark:hover:shadow-gray-700">
-                        <div
-                            class="me-3 flex h-[45px] min-w-[45px] -rotate-45 items-center justify-center rounded-full bg-gradient-to-r from-transparent to-indigo-600/10 text-center text-indigo-600">
-                            <x-feathericon-settings class="rotate-45" />
-                        </div>
-                        <div class="flex-1">
-                            <h4 class="mb-0 text-lg font-medium">Easy to customize</h4>
-                        </div>
-                    </div>
-                </div>
             </div>
-            <!--end grid-->
 
-            <div class="grid grid-cols-1 justify-center">
-                <div class="mt-6 text-center">
-                    <a href=""
-                        class="relative inline-block border-none text-center align-middle text-base font-semibold tracking-wide text-indigo-600 duration-500 ease-in-out after:absolute after:bottom-0 after:end-0 after:start-0 after:h-px after:w-0 after:bg-indigo-600 after:duration-500 after:content-[''] hover:text-indigo-600 hover:after:end-auto hover:after:w-full">See
-                        More <i class="uil uil-angle-right-b align-middle"></i></a>
-                </div>
-            </div>
+
         </div>
-        <!--end contanier-->
+
+        <div class="bg-white py-16 sm:py-24">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+              <div class="mx-auto max-w-xl text-center">
+                <h2 class="text-lg font-semibold leading-8 tracking-tight text-indigo-600">Depoimentos</h2>
+                <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">O que os nossos alunos estão dizendo sobre nossos cursos</p>
+              </div>
+              <div class="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
+                <div class="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
+                  <div class="pt-8 sm:inline-block sm:w-full sm:px-4">
+                    <figure class="rounded-2xl bg-gray-50 p-8 text-sm leading-6">
+                      <blockquote class="text-gray-900">
+                        <p>“Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.”</p>
+                      </blockquote>
+                      <figcaption class="mt-6 flex items-center gap-x-4">
+                        <img class="h-10 w-10 rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                        <div>
+                          <div class="font-semibold text-gray-900">Leslie Alexander</div>
+                          <div class="text-gray-600">@lesliealexander</div>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="pt-8 sm:inline-block sm:w-full sm:px-4">
+                    <figure class="rounded-2xl bg-gray-50 p-8 text-sm leading-6">
+                      <blockquote class="text-gray-900">
+                        <p>“Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.”</p>
+                      </blockquote>
+                      <figcaption class="mt-6 flex items-center gap-x-4">
+                        <img class="h-10 w-10 rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                        <div>
+                          <div class="font-semibold text-gray-900">Leslie Alexander</div>
+                          <div class="text-gray-600">@lesliealexander</div>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="pt-8 sm:inline-block sm:w-full sm:px-4">
+                    <figure class="rounded-2xl bg-gray-50 p-8 text-sm leading-6">
+                      <blockquote class="text-gray-900">
+                        <p>“Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.”</p>
+                      </blockquote>
+                      <figcaption class="mt-6 flex items-center gap-x-4">
+                        <img class="h-10 w-10 rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                        <div>
+                          <div class="font-semibold text-gray-900">Leslie Alexander</div>
+                          <div class="text-gray-600">@lesliealexander</div>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="pt-8 sm:inline-block sm:w-full sm:px-4">
+                    <figure class="rounded-2xl bg-gray-50 p-8 text-sm leading-6">
+                      <blockquote class="text-gray-900">
+                        <p>“Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.”</p>
+                      </blockquote>
+                      <figcaption class="mt-6 flex items-center gap-x-4">
+                        <img class="h-10 w-10 rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                        <div>
+                          <div class="font-semibold text-gray-900">Leslie Alexander</div>
+                          <div class="text-gray-600">@lesliealexander</div>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="pt-8 sm:inline-block sm:w-full sm:px-4">
+                    <figure class="rounded-2xl bg-gray-50 p-8 text-sm leading-6">
+                      <blockquote class="text-gray-900">
+                        <p>“Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.”</p>
+                      </blockquote>
+                      <figcaption class="mt-6 flex items-center gap-x-4">
+                        <img class="h-10 w-10 rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                        <div>
+                          <div class="font-semibold text-gray-900">Leslie Alexander</div>
+                          <div class="text-gray-600">@lesliealexander</div>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="pt-8 sm:inline-block sm:w-full sm:px-4">
+                    <figure class="rounded-2xl bg-gray-50 p-8 text-sm leading-6">
+                      <blockquote class="text-gray-900">
+                        <p>“Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.”</p>
+                      </blockquote>
+                      <figcaption class="mt-6 flex items-center gap-x-4">
+                        <img class="h-10 w-10 rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                        <div>
+                          <div class="font-semibold text-gray-900">Leslie Alexander</div>
+                          <div class="text-gray-600">@lesliealexander</div>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+
+
+                  <!-- More testimonials... -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--end contanier-->
     </section>
 
-    {{-- CTA --}}
-    <section class="relative py-16 pt-0 md:py-24 md:pt-0">
-        <div class="container relative">
-            <div class="grid grid-cols-1 justify-center">
-                <div class="relative z-1">
-                    <div class="grid grid-cols-1 justify-center text-center md:text-start lg:grid-cols-12">
-                        <div class="lg:col-span-10 lg:col-start-2">
-                            <div class="relative">
-                                <img src="{{ asset('images/cta-bg.jpg') }}" class="rounded-md shadow-lg"
-                                    alt="">
-                                <div class="absolute bottom-2/4 end-0 start-0 translate-y-2/4 text-center">
-                                    <a href="#!" data-type="youtube" data-id="S_CGed6E610"
-                                        class="lightbox inline-flex h-20 w-20 items-center justify-center rounded-full bg-white text-indigo-600 shadow-lg dark:bg-slate-900 dark:text-white dark:shadow-gray-800">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                            fill="currentColor" class="h-6 w-6">
-                                            <path fill-rule="evenodd"
-                                                d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                                                clip-rule="evenodd" />
-                                        </svg>
 
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content md:mt-8">
-                        <div class="grid grid-cols-1 justify-center text-center md:text-start lg:grid-cols-12">
-                            <div class="lg:col-span-10 lg:col-start-2">
-                                <div class="grid grid-cols-1 items-center md:grid-cols-2">
-                                    <div class="mt-8">
-                                        <div class="section-title text-md-start">
-                                            <h6 class="text-lg font-semibold text-white/50">Team</h6>
-                                            <h3
-                                                class="mt-2 text-2xl font-semibold leading-normal text-white md:text-3xl md:leading-normal">
-                                                Meet Experience <br> Team Member</h3>
-                                        </div>
-                                    </div>
-
-                                    <div class="mt-8">
-                                        <div class="section-title text-md-start">
-                                            <p class="mx-auto mb-2 max-w-xl text-white/50">Start working with Techwind
-                                                that can provide everything you need to generate awareness, drive
-                                                traffic, connect.</p>
-                                            <a href="" class="text-white">Read More <i
-                                                    class="uil uil-angle-right-b align-middle"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--end row -->
-        </div>
-        <!--end container-->
-
-        <div class="absolute bottom-0 end-0 start-0 h-4/5 bg-gradient-to-b from-indigo-500 to-indigo-600 sm:h-2/3">
-        </div>
-    </section>
     {{-- Footer --}}
     <footer class="footer relative bg-dark-footer text-gray-200 dark:text-gray-200">
         <div class="container relative">
@@ -508,10 +550,9 @@
                         <div class="grid grid-cols-1 gap-[30px] md:grid-cols-12">
                             <div class="md:col-span-12 lg:col-span-4">
                                 <a href="#" class="text-[22px] focus:outline-none">
-                                    <img src="assets/images/logo-light.png" alt="">
+                                    <img src="{{ asset('images/logo_450x172.png') }}" width="250px" alt="">
                                 </a>
-                                <p class="mt-6 text-gray-300">Start working with Tailwind CSS that can provide
-                                    everything you need to generate awareness, drive traffic, connect.</p>
+                                <p class="mt-6 text-gray-300">Somos uma escola de inglês on-line especializada em oferecer cursos de qualidade para estudantes de todas as idades e níveis de fluência. Nossa missão é proporcionar aos alunos uma experiência de aprendizagem interativa, personalizada e flexível, tornando o estudo do inglês mais acessível e conveniente.</p>
                                 <ul class="mt-6 list-none">
                                     <li class="inline"><a href="https://1.envato.market/techwind" target="_blank"
                                             class="inline-flex h-8 w-8 items-center justify-center rounded-md border border-gray-800 text-center align-middle text-base tracking-wide duration-500 hover:border-indigo-600 hover:bg-indigo-600 dark:hover:border-indigo-600 dark:hover:bg-indigo-600">
@@ -526,49 +567,27 @@
                                             class="inline-flex h-8 w-8 items-center justify-center rounded-md border border-gray-800 text-center align-middle text-base tracking-wide duration-500 hover:border-indigo-600 hover:bg-indigo-600 dark:hover:border-indigo-600 dark:hover:bg-indigo-600">
                                             <x-uni-behance-o class="h-4 w-4" title="dribbble" />
                                         </a></li>
-                                    <li class="inline"><a href="http://linkedin.com/company/shreethemes"
-                                            target="_blank"
-                                            class="inline-flex h-8 w-8 items-center justify-center rounded-md border border-gray-800 text-center align-middle text-base tracking-wide duration-500 hover:border-indigo-600 hover:bg-indigo-600 dark:hover:border-indigo-600 dark:hover:bg-indigo-600"><i
-                                                class="uil uil-linkedin" title="Linkedin"></i></a></li>
-                                    <li class="inline"><a href="https://www.facebook.com/shreethemes" target="_blank"
-                                            class="inline-flex h-8 w-8 items-center justify-center rounded-md border border-gray-800 text-center align-middle text-base tracking-wide duration-500 hover:border-indigo-600 hover:bg-indigo-600 dark:hover:border-indigo-600 dark:hover:bg-indigo-600"><i
-                                                class="uil uil-facebook-f align-middle" title="facebook"></i></a></li>
-                                    <li class="inline"><a href="https://www.instagram.com/shreethemes/"
-                                            target="_blank"
-                                            class="inline-flex h-8 w-8 items-center justify-center rounded-md border border-gray-800 text-center align-middle text-base tracking-wide duration-500 hover:border-indigo-600 hover:bg-indigo-600 dark:hover:border-indigo-600 dark:hover:bg-indigo-600"><i
-                                                class="uil uil-instagram align-middle" title="instagram"></i></a></li>
-                                    <li class="inline"><a href="https://twitter.com/shreethemes" target="_blank"
-                                            class="inline-flex h-8 w-8 items-center justify-center rounded-md border border-gray-800 text-center align-middle text-base tracking-wide duration-500 hover:border-indigo-600 hover:bg-indigo-600 dark:hover:border-indigo-600 dark:hover:bg-indigo-600"><i
-                                                class="uil uil-twitter align-middle" title="twitter"></i></a></li>
-                                    <li class="inline"><a href="mailto:support@shreethemes.in"
-                                            class="inline-flex h-8 w-8 items-center justify-center rounded-md border border-gray-800 text-center align-middle text-base tracking-wide duration-500 hover:border-indigo-600 hover:bg-indigo-600 dark:hover:border-indigo-600 dark:hover:bg-indigo-600"><i
-                                                class="uil uil-envelope align-middle" title="email"></i></a></li>
-                                    <li class="inline"><a href="https://forms.gle/QkTueCikDGqJnbky9" target="_blank"
-                                            class="inline-flex h-8 w-8 items-center justify-center rounded-md border border-gray-800 text-center align-middle text-base tracking-wide duration-500 hover:border-indigo-600 hover:bg-indigo-600 dark:hover:border-indigo-600 dark:hover:bg-indigo-600"><i
-                                                class="uil uil-file align-middle" title="customization"></i></a></li>
+
                                 </ul>
                                 <!--end icon-->
                             </div>
                             <!--end col-->
 
                             <div class="md:col-span-4 lg:col-span-2">
-                                <h5 class="font-semibold tracking-[1px] text-gray-100">Company</h5>
+                                <h5 class="font-semibold tracking-[1px] text-gray-100">Institucional</h5>
                                 <ul class="footer-list mt-6 list-none">
                                     <li><a href="page-aboutus.html"
                                             class="text-gray-300 duration-500 ease-in-out hover:text-gray-400"><i
-                                                class="uil uil-angle-right-b"></i> About us</a></li>
+                                                class="uil uil-angle-right-b"></i> Sobre nós</a></li>
                                     <li class="mt-[10px]"><a href="page-services.html"
                                             class="text-gray-300 duration-500 ease-in-out hover:text-gray-400"><i
-                                                class="uil uil-angle-right-b"></i> Services</a></li>
+                                                class="uil uil-angle-right-b"></i> Nossos cursos</a></li>
                                     <li class="mt-[10px]"><a href="page-team.html"
                                             class="text-gray-300 duration-500 ease-in-out hover:text-gray-400"><i
-                                                class="uil uil-angle-right-b"></i> Team</a></li>
-                                    <li class="mt-[10px]"><a href="page-pricing.html"
-                                            class="text-gray-300 duration-500 ease-in-out hover:text-gray-400"><i
-                                                class="uil uil-angle-right-b"></i> Pricing</a></li>
+                                                class="uil uil-angle-right-b"></i> Nosso professores</a></li>
                                     <li class="mt-[10px]"><a href="portfolio-creative-four.html"
                                             class="text-gray-300 duration-500 ease-in-out hover:text-gray-400"><i
-                                                class="uil uil-angle-right-b"></i> Project</a></li>
+                                                class="uil uil-angle-right-b"></i> Área de membros</a></li>
 
                                     <li class="mt-[10px]"><a href="auth-login.html"
                                             class="text-gray-300 duration-500 ease-in-out hover:text-gray-400"><i
@@ -578,37 +597,35 @@
                             <!--end col-->
 
                             <div class="md:col-span-4 lg:col-span-3">
-                                <h5 class="font-semibold tracking-[1px] text-gray-100">Usefull Links</h5>
+                                <h5 class="font-semibold tracking-[1px] text-gray-100">Importante</h5>
                                 <ul class="footer-list mt-6 list-none">
                                     <li><a href="page-terms.html"
                                             class="text-gray-300 duration-500 ease-in-out hover:text-gray-400"><i
-                                                class="uil uil-angle-right-b"></i> Terms of Services</a></li>
+                                                class="uil uil-angle-right-b"></i> Termos e Condições</a></li>
                                     <li class="mt-[10px]"><a href="page-privacy.html"
                                             class="text-gray-300 duration-500 ease-in-out hover:text-gray-400"><i
-                                                class="uil uil-angle-right-b"></i> Privacy Policy</a></li>
+                                                class="uil uil-angle-right-b"></i> Política de cancelamento</a></li>
                                     <li class="mt-[10px]"><a href="documentation.html"
                                             class="text-gray-300 duration-500 ease-in-out hover:text-gray-400"><i
-                                                class="uil uil-angle-right-b"></i> Documentation</a></li>
+                                                class="uil uil-angle-right-b"></i> Fale Conosco</a></li>
                                     <li class="mt-[10px]"><a href="changelog.html"
                                             class="text-gray-300 duration-500 ease-in-out hover:text-gray-400"><i
-                                                class="uil uil-angle-right-b"></i> Changelog</a></li>
+                                                class="uil uil-angle-right-b"></i> Trabalhe Conosco</a></li>
                                     <li class="mt-[10px]"><a href="widget.html"
                                             class="text-gray-300 duration-500 ease-in-out hover:text-gray-400"><i
-                                                class="uil uil-angle-right-b"></i> Widget</a></li>
+                                                class="uil uil-angle-right-b"></i> Programa de fidelidade</a></li>
                                 </ul>
                             </div>
                             <!--end col-->
 
                             <div class="md:col-span-4 lg:col-span-3">
                                 <h5 class="font-semibold tracking-[1px] text-gray-100">Newsletter</h5>
-                                <p class="mt-6">Sign up and receive the latest tips via email.</p>
+                                <p class="mt-6">Cadastre seu e-email.</p>
                                 <form>
                                     <div class="grid grid-cols-1">
                                         <div class="my-3">
-                                            <label class="form-label">Write your email <span
-                                                    class="text-red-600">*</span></label>
                                             <div class="form-icon relative mt-2">
-                                                <i data-feather="mail" class="absolute start-4 top-3 h-4 w-4"></i>
+                                                <x-feathericon-mail class="absolute start-4 top-3 h-4 w-4" />
                                                 <input type="email"
                                                     class="form-input h-10 w-full rounded border-0 bg-gray-800 px-3 py-2 ps-12 text-gray-100 placeholder:text-gray-200 focus:shadow-none focus:ring-0"
                                                     placeholder="Email" name="email" required="">
@@ -616,7 +633,7 @@
                                         </div>
 
                                         <button type="submit" id="submitsubscribe" name="send"
-                                            class="inline-block rounded-md border border-indigo-600 bg-indigo-600 px-5 py-2 text-center align-middle text-base font-semibold tracking-wide text-white duration-500 hover:border-indigo-700 hover:bg-indigo-700">Subscribe</button>
+                                            class="inline-block rounded-md border border-indigo-600 bg-indigo-600 px-5 py-2 text-center align-middle text-base font-semibold tracking-wide text-white duration-500 hover:border-indigo-700 hover:bg-indigo-700">Assinar</button>
                                     </div>
                                 </form>
                             </div>
@@ -664,7 +681,7 @@
     </footer>
     {{-- Cookies --}}
     <!-- Start Cookie Popup -->
-    <div class="cookie-popup fixed bottom-3 end-3 start-3 z-50 mx-auto w-full px-6 py-5 sm:start-0">
+    {{-- <div class="cookie-popup fixed bottom-3 end-3 start-3 z-50 mx-auto w-full px-6 py-5 sm:start-0">
         <div class="mx-auto max-w-7xl px-6">
             <div class="rounded-lg bg-yellow-100 p-2">
                 <div class="flex flex-wrap items-center justify-between">
@@ -684,7 +701,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 </div>
 <!--Note: Cookies Js including in plugins.init.js (path like; assets/js/plugins.init.js) and Cookies css including in _helper.scss (path like; scss/_helper.scss)-->
 <!-- End Cookie Popup -->
