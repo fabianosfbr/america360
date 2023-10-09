@@ -2,9 +2,9 @@
 
 namespace App\Livewire\Home;
 
-
+use App\Models\Account;
 use Livewire\Component;
-use App\Models\Newsletter;
+use App\Models\Contact;
 use Livewire\Attributes\Rule;
 
 class Index extends Component
@@ -29,10 +29,11 @@ class Index extends Component
     {
         $this->validate();
 
-        $newsletter = Newsletter::castAndCreate([
+        $newsletter = Contact::create([
             'name' => $this->name,
             'email' => $this->email,
             'phone' => $this->phone,
+            'account_id' => Account::find()->first()->id,
         ]);
 
         if ($newsletter) {

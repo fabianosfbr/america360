@@ -11,14 +11,16 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('newsletters', function (Blueprint $table) {
+        Schema::create('contacts', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->string('email');
-            $table->string('phone', 20);
-            $table->softDeletes();
-
+            $table->string('phone')->nullable();
+            $table->unsignedBigInteger('account_id')->nullable();
             $table->timestamps();
+
+            $table->foreign('account_id')->references('id')->on('accounts');
+
         });
     }
 
@@ -27,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('newsletters');
+        Schema::dropIfExists('contacts');
     }
 };
