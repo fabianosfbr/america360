@@ -33,7 +33,6 @@ class Index extends Component
             'name' => $this->name,
             'email' => $this->email,
             'phone' => $this->phone,
-            'account_id' => Account::find()->first()->id,
         ]);
 
         if ($newsletter) {

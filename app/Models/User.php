@@ -3,32 +3,32 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
+
+use Filament\Panel;
+use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Notifications\Notifiable;
+use Filament\Models\Contracts\FilamentUser;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
-use Laravel\Sanctum\HasApiTokens;
-use WendellAdriel\Lift\Lift;
 
-class User extends Authenticatable
+
+class User extends Authenticatable implements FilamentUser
 {
-    use HasApiTokens, HasFactory, Notifiable, Lift;
+    use HasApiTokens, HasFactory, Notifiable;
 
-    #[Fillable]
-    public $name;
+    protected $guarded = ['id'];
 
-    #[Fillable]
-    public $email;
+    protected $casts = [
+        'email_verified_at' => 'datetime',
+    ];
 
+    protected $hidden = [
+        'password',
+        'remember_token',
+    ];
 
-    #[Fillable]
-    #[Hidden]
-    #[Cast('hashed')]
-    public $password;
-
-
-    #[Cast('datetime')]
-    public $email_verified_at;
-
-    #[Hidden]
-    public $remember_token;
+    public function canAccessPanel(Panel $panel): bool
+    {
+        return true; // @todo Change this to check for access level
+    }
 }

@@ -3,7 +3,15 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
+use App\Models\User;
+use App\Models\PipelineStages;
+use Database\Seeders\TagSeeder;
 use Illuminate\Database\Seeder;
+use Database\Seeders\ContactSeeder;
+use Illuminate\Support\Facades\Hash;
+use Database\Seeders\LeadSourceSeeder;
+use Database\Seeders\PipelineStageSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -12,11 +20,18 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // \App\Models\User::factory(10)->create();
+        User::factory()->create([
+            'name' => 'Administrador',
+            'email' => 'admin@email.com',
+            'password' => Hash::make('asdfasdf'),
+        ]);
 
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        $this->call([
+            LeadSourceSeeder::class,
+            PipelineStageSeeder::class,
+            TagSeeder::class,
+            ContactSeeder::class,
+
+        ]);
     }
 }

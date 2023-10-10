@@ -14,6 +14,7 @@ use Filament\Forms\Components\Section;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
+use Filament\Forms\Components\RichEditor;
 use Illuminate\Database\Eloquent\Builder;
 use App\Filament\Resources\ContactResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
@@ -34,45 +35,69 @@ class ContactResource extends Resource
             ->schema([
                 Section::make()
                     ->schema([
-                        TextInput::make('name')
-                            ->required(),
+                        TextInput::make('first_name')
+                            ->label('Nome')
+                            ->columnSpan(3),
+                        TextInput::make('last_name')
+                            ->label('Sobrenome')
+                            ->columnSpan(3),
                         TextInput::make('email')
                             ->required()
-                            ->email(),
+                            ->email()
+                            ->columnSpan(3),
                         TextInput::make('phone')
-                            ->tel(),
-                        Select::make('account_id')
-                            ->label('Account')
-                            ->options(Account::all()->pluck('name', 'id'))
-                            ->searchable()
+                            ->tel()
+                            ->columnSpan(3),
+                        RichEditor::make('description')
+                            ->columnSpanFull(),
+                        Select::make('lead_source_id')
+                            ->relationship('leadSource', 'name')
+                            ->columnSpan(1),
+                        Select::make('pipeline_stage_id')
+                            ->relationship('pipelineStage', 'name')
+                            ->columnSpan(1),
+                        Select::make('tags')
+                            ->relationship('tags', 'name')
+                            ->preload()
+                            ->multiple()
+                            ->columnSpan(4),
+
                     ])
-                    ->columns(2)
+                    ->columns(6)
             ]);
     }
 
     public static function table(Table $table): Table
     {
         return $table
+            ->striped()
             ->columns([
-                TextColumn::make('name')
-                    ->label('Nome'),
+                TextColumn::make('first_name')
+                    ->label('Full name')
+                    ->formatStateUsing(function ($record) {
+                        $tagsList = view('contact.tagsList', ['tags' => $record->tags])->render();
+
+                        return $record->first_name . ' ' . $record->last_name . ' ' . $tagsList;
+                    })
+                    ->html()
+                    ->searchable(['first_name', 'last_name']),
                 TextColumn::make('email')
                     ->label('Email'),
                 TextColumn::make('phone')
-                    ->label('Telefone'),
-                TextColumn::make('account.name'),
+                    ->label('Mobile'),
+                TextColumn::make('leadSource.name'),
+                TextColumn::make('pipelineStage.name'),
                 TextColumn::make('created_at')
-                    ->label('Data registro')
-                    ->dateTime('d-m-Y H:i'),
+                    ->dateTime('d-m-Y H:i')
+                    ->toggleable(isToggledHiddenByDefault: false),
             ])
             ->filters([
                 //
             ])
             ->actions([
                 Tables\Actions\ViewAction::make()
-                    ->modalWidth('md')
-                    ->modalHeading('Newsletter')
-                    ->modalDescription('Informações do contato'),
+                    ->modalHeading('Contact')
+                    ->modalDescription('Contact information'),
             ])
             ->bulkActions([
                 // Tables\Actions\BulkActionGroup::make([
