@@ -15,9 +15,9 @@ return new class extends Migration
             $table->uuid('id')->primary();
             $table->string('name');
             $table->string('phone');
-            $table->string('api_key');
+            $table->string('instance');
             $table->string('webhook')->nullable();
-            $table->boolean('is_enabled')->default(true);
+            $table->boolean('is_enabled')->default(false);
             $table->timestamps();
         });
     }
