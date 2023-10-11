@@ -9,6 +9,7 @@ use App\Models\Device as DeviceModel;
 use App\Filament\Widgets\StatsOverview;
 use Illuminate\Database\Eloquent\Model;
 use Filament\Forms\Components\TextInput;
+use Filament\Notifications\Notification;
 use Ysfkaya\FilamentPhoneInput\Forms\PhoneInput;
 use App\Services\EvolutionApi\Instance\InstanceService;
 
@@ -23,8 +24,8 @@ class Device extends Page
 
     public function mount()
     {
-        
-        
+
+
     }
 
     protected function getHeaderWidgets(): array
@@ -75,11 +76,9 @@ class Device extends Page
                         'events' => []
                     ];
 
-                   
                     $instanceService = new InstanceService();
 
                     $response = $instanceService->create($payload);
-
 
                     if (isset($response['status']) and $response['status'] === 400) {
                         Notification::make()
@@ -88,10 +87,10 @@ class Device extends Page
                             ->color('danger')
                             ->send();
 
-                            $device->delete();
+                        $device->delete();
                     }
 
-                    
+
 
                 })->visible(function(){
                     return !DeviceModel::get()->count() > 0;
