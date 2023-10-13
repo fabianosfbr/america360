@@ -13,17 +13,19 @@ class StatsOverview extends BaseWidget
     protected function getStats(): array
     {
         $device = Device::first();
-    
+
         $connected = '0';
         $disconnected = '1';
         $phone = ' - ';
         $connectedText = 'disconnected';
+        $deviceRoute = '#';
 
-        if($device){
+        if ($device) {
             $connected =  $device->is_enabled ? '1' : '0';
             $disconnected = $device->is_enabled ? '0' : '1';
             $phone = $device->phone;
             $connectedText = $device->is_enabled ? 'connected' : 'disconnected';
+            $deviceRoute = route('filament.admin.pages.device.connect', ['device' => $device->id]);
         }
 
         return [
@@ -40,16 +42,17 @@ class StatsOverview extends BaseWidget
                 ->description(
                     new HtmlString('
                         <div class="w-full flex items-center gap-2 text-gray-500 font-normal">'
-                        . 'Status: '. $connectedText
+                        . 'Status: ' . $connectedText
                         . '</div>
                         <div class="text-xs w-full flex items-center gap-2 mt-2">
                             <a class="text-primary-400 hover:text-primary-500 hover:cursor-pointer"
-                               href="#">Connect
+                                href="' . $deviceRoute . '">
+                                Connect
                             </a>
                             <span class="text-gray-300">|</span>
                             <a class="text-primary-400 hover:text-primary-500 hover:cursor-pointer"
                                href="#">
-                                Edit
+                                Restart
                             </a>
                         </div>
                     ')

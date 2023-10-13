@@ -24,6 +24,26 @@ class Device extends Page
 
     public function mount()
     {
+        $device = DeviceModel::take(1)->first();
+
+        if($device){
+
+            $service = new InstanceService();
+            $response = $service->status($device->instance);
+
+            if(isset($response['instance']['state']) and $response['instance']['state'] =='open') {
+                $device->update([
+                    'is_enabled' => 1
+                ]);
+            }
+            else{
+                $device->update([
+                    'is_enabled' => 0
+                ]);
+            }
+
+
+        }
 
 
     }
@@ -56,7 +76,6 @@ class Device extends Page
                     return $data;
                 })
                 ->action(function (Actions\CreateAction $action, array $data) {
-                    DeviceModel::truncate();
 
                     $device = new DeviceModel();
                     $device->name = $data['name'];
