@@ -11,18 +11,21 @@ jobs:
     - name: 🚚 Get latest code
       uses: actions/checkout@v3
     - name: Install Dependencies
-      run: composer update --ignore-platform-reqs     
+      run: composer update --ignore-platform-reqs
     - name: Directory Permissions
-      run: chmod -R 777 storage bootstrap/cache           
+      run: chmod -R 777 storage bootstrap/cache
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ${{ secrets.URL_HOSTGATOR_FF}}
         username: ${{ secrets.USER_HOSTGATOR_FF}}
-        password: ${{ secrets.PWD_HOSTGATOR_FF}} 
-        port: ${{ secrets.PORT_HOSTGATOR_FF }}        
+        password: ${{ secrets.PWD_HOSTGATOR_FF}}
+        port: ${{ secrets.PORT_HOSTGATOR_FF }}
     - name: Clear config cache
-      run: php artisan config:cache         
+      run: php artisan config:cache
+    - name: Clear view
+      run: php artisan view:clear
+    - name: Clear cache
+      run: php artisan cache:clear
     - name: Optimize clear
-      run: php artisan optimize:clear        
-  
+      run: php artisan optimize:clear
