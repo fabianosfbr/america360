@@ -9,6 +9,7 @@ use App\Models\Contact;
 use Filament\Forms\Form;
 use Filament\Tables\Table;
 use Filament\Resources\Resource;
+use Filament\Tables\Actions\Action;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Section;
 use Filament\Tables\Columns\TextColumn;
@@ -19,6 +20,8 @@ use Illuminate\Database\Eloquent\Builder;
 use App\Filament\Resources\ContactResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\ContactResource\RelationManagers;
+use App\Filament\Resources\ContactResource\RelationManagers\NotesRelationManager;
+use App\Models\Note;
 
 class ContactResource extends Resource
 {
@@ -92,10 +95,24 @@ class ContactResource extends Resource
                 //
             ])
             ->actions([
-                Tables\Actions\ViewAction::make()
+                // Tables\Actions\ViewAction::make()
+                //     ->iconButton()
+                //     ->modalHeading('Contact')
+                //     ->modalDescription('Contact information'),
+                Action::make('notes')
+                    ->icon('heroicon-m-clipboard-document-check')
                     ->iconButton()
-                    ->modalHeading('Contact')
-                    ->modalDescription('Contact information'),
+                    ->color('gray')
+                    ->form([
+                        RichEditor::make('body')
+                            ->label('Note')
+                            ->required()
+                            ->columnSpanFull(),
+                    ])
+                    ->action(function (Contact $record, array $data): void {
+                        $noteToAdd = new Note(['body' => $data['body']]);
+                        $record->notes()->save($noteToAdd);
+                    }),
             ])
             ->bulkActions([
                 // Tables\Actions\BulkActionGroup::make([
@@ -114,7 +131,7 @@ class ContactResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            NotesRelationManager::class
         ];
     }
 
