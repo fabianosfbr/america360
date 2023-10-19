@@ -31,6 +31,8 @@ class AdminPanelProvider extends PanelProvider
             ->darkMode(false)
             // ->topNavigation()
             ->brandLogo(asset('images/logo.png'))
+            ->brandLogoHeight('3rem')
+            ->brandName('America 360')
             ->font('Poppins')
             //->font('Nunito')
             ->colors([
