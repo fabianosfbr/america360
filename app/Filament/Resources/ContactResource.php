@@ -93,6 +93,7 @@ class ContactResource extends Resource
             ])
             ->actions([
                 Tables\Actions\ViewAction::make()
+                    ->iconButton()
                     ->modalHeading('Contact')
                     ->modalDescription('Contact information'),
             ])
