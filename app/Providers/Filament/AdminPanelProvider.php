@@ -34,7 +34,6 @@ class AdminPanelProvider extends PanelProvider
             ->brandLogoHeight('3rem')
             ->brandName('America 360')
             ->font('Poppins')
-            //->font('Nunito')
             ->colors([
                 'primary' => Color::Blue,
             ])
