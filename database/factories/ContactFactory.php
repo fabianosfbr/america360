@@ -20,8 +20,7 @@ class ContactFactory extends Factory
         $leadSorce = LeadSource::inRandomOrder()->first();
         $pipelineStage = PipelineStage::inRandomOrder()->first();
         return [
-            'first_name' => $this->faker->firstName(),
-            'last_name' => $this->faker->lastName(),
+            'name' => $this->faker->name(),
             'email' => $this->faker->unique()->safeEmail(),
             'phone' => $this->faker->phoneNumber(),
             'description' => $this->faker->text(),

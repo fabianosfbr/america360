@@ -35,11 +35,8 @@ class ContactResource extends Resource
             ->schema([
                 Section::make()
                     ->schema([
-                        TextInput::make('first_name')
+                        TextInput::make('name')
                             ->label('Nome')
-                            ->columnSpan(3),
-                        TextInput::make('last_name')
-                            ->label('Sobrenome')
                             ->columnSpan(3),
                         TextInput::make('email')
                             ->required()
@@ -72,15 +69,15 @@ class ContactResource extends Resource
         return $table
             ->striped()
             ->columns([
-                TextColumn::make('first_name')
+                TextColumn::make('name')
                     ->label('Full name')
                     ->formatStateUsing(function ($record) {
                         $tagsList = view('contact.tagsList', ['tags' => $record->tags])->render();
 
-                        return $record->first_name . ' ' . $record->last_name . ' ' . $tagsList;
+                        return $record->name . ' ' . $tagsList;
                     })
                     ->html()
-                    ->searchable(['first_name', 'last_name']),
+                    ->searchable(),
                 TextColumn::make('email')
                     ->label('Email'),
                 TextColumn::make('phone')

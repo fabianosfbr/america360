@@ -29,13 +29,16 @@ class Index extends Component
     {
         $this->validate();
 
-        $newsletter = Contact::create([
-            'name' => $this->name,
+        $contact = Contact::create([
+            'first_name' => $this->fist_name,
+            'last_name' => $this->last_name,
             'email' => $this->email,
             'phone' => $this->phone,
+            'lead_source' => 1,
+            'pipeline_stage' => 1,
         ]);
 
-        if ($newsletter) {
+        if ($contact) {
             session()->flash('status', 'Os dados foram enviados com sucesso!');
             $this->name = $this->email = $this->phone = null;
         }
