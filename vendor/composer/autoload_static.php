@@ -193,6 +193,7 @@ class ComposerStaticInite087aa2e0cf01acd1fb6fde35fc2419a
         ),
         'E' => 
         array (
+            'ElipZis\\Cacheable\\' => 18,
             'Egulias\\EmailValidator\\' => 23,
         ),
         'D' => 
@@ -614,6 +615,10 @@ class ComposerStaticInite087aa2e0cf01acd1fb6fde35fc2419a
         'Faker\\' => 
         array (
             0 => __DIR__ . '/..' . '/fakerphp/faker/src/Faker',
+        ),
+        'ElipZis\\Cacheable\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/elipzis/laravel-cacheable-model/src',
         ),
         'Egulias\\EmailValidator\\' => 
         array (
@@ -1457,6 +1462,9 @@ class ComposerStaticInite087aa2e0cf01acd1fb6fde35fc2419a
         'Egulias\\EmailValidator\\Warning\\QuotedString' => __DIR__ . '/..' . '/egulias/email-validator/src/Warning/QuotedString.php',
         'Egulias\\EmailValidator\\Warning\\TLD' => __DIR__ . '/..' . '/egulias/email-validator/src/Warning/TLD.php',
         'Egulias\\EmailValidator\\Warning\\Warning' => __DIR__ . '/..' . '/egulias/email-validator/src/Warning/Warning.php',
+        'ElipZis\\Cacheable\\CacheableServiceProvider' => __DIR__ . '/..' . '/elipzis/laravel-cacheable-model/src/CacheableServiceProvider.php',
+        'ElipZis\\Cacheable\\Database\\Query\\CacheableQueryBuilder' => __DIR__ . '/..' . '/elipzis/laravel-cacheable-model/src/Database/Query/CacheableQueryBuilder.php',
+        'ElipZis\\Cacheable\\Models\\Traits\\Cacheable' => __DIR__ . '/..' . '/elipzis/laravel-cacheable-model/src/Models/Traits/Cacheable.php',
         'Faker\\Calculator\\Ean' => __DIR__ . '/..' . '/fakerphp/faker/src/Faker/Calculator/Ean.php',
         'Faker\\Calculator\\Iban' => __DIR__ . '/..' . '/fakerphp/faker/src/Faker/Calculator/Iban.php',
         'Faker\\Calculator\\Inn' => __DIR__ . '/..' . '/fakerphp/faker/src/Faker/Calculator/Inn.php',

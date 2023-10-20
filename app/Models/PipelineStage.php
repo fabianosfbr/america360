@@ -5,10 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use ElipZis\Cacheable\Models\Traits\Cacheable;
+
 
 class PipelineStage extends Model
 {
-    use HasFactory;
+    use HasFactory, Cacheable;
 
     protected $guarded = ['id'];
 

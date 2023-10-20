@@ -1205,6 +1205,90 @@
             "install-path": "../egulias/email-validator"
         },
         {
+            "name": "elipzis/laravel-cacheable-model",
+            "version": "v0.3.0",
+            "version_normalized": "0.3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/elipZis/laravel-cacheable-model.git",
+                "reference": "d3f5f10398401201a2d8336f8e508e49509688e8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/elipZis/laravel-cacheable-model/zipball/d3f5f10398401201a2d8336f8e508e49509688e8",
+                "reference": "d3f5f10398401201a2d8336f8e508e49509688e8",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^10.0",
+                "php": "^8.1",
+                "spatie/laravel-package-tools": "^1.14"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.8",
+                "nunomaduro/collision": "^6.1",
+                "nunomaduro/larastan": "^2.0.1",
+                "orchestra/testbench": "^8.0",
+                "pestphp/pest": "^1.21",
+                "pestphp/pest-plugin-laravel": "^1.1",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "phpunit/phpunit": "^9.6",
+                "spatie/laravel-ray": "^1.26"
+            },
+            "time": "2023-03-27T10:19:34+00:00",
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "ElipZis\\Cacheable\\CacheableServiceProvider"
+                    ]
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "ElipZis\\Cacheable\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "elipZis GmbH",
+                    "email": "contact@elipzis.com",
+                    "homepage": "https://elipZis.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Automatic query-based model cache for your Laravel app",
+            "homepage": "https://github.com/elipzis/laravel-cacheable-model",
+            "keywords": [
+                "cache",
+                "config",
+                "elipZis",
+                "eloquent",
+                "laravel",
+                "model",
+                "query",
+                "querybuilder"
+            ],
+            "support": {
+                "issues": "https://github.com/elipZis/laravel-cacheable-model/issues",
+                "source": "https://github.com/elipZis/laravel-cacheable-model/tree/v0.3.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/elipZis",
+                    "type": "github"
+                }
+            ],
+            "install-path": "../elipzis/laravel-cacheable-model"
+        },
+        {
             "name": "fakerphp/faker",
             "version": "v1.23.0",
             "version_normalized": "1.23.0.0",
