@@ -10,7 +10,7 @@ use ElipZis\Cacheable\Models\Traits\Cacheable;
 
 class PipelineStage extends Model
 {
-    use HasFactory, Cacheable;
+    use HasFactory;
 
     protected $guarded = ['id'];
 

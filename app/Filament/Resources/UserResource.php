@@ -15,6 +15,7 @@ use Illuminate\Database\Eloquent\Builder;
 use App\Filament\Resources\UserResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\UserResource\RelationManagers;
+use Filament\Forms\Components\Select;
 
 class UserResource extends Resource
 {
@@ -44,6 +45,10 @@ class UserResource extends Resource
                 TextInput::make('password_confirmation')
                     ->password()
                     ->visibleOn('create'),
+                Select::make('roles')
+                    ->multiple()
+                    ->relationship('roles', 'name'),
+
             ]);
     }
 
@@ -52,7 +57,9 @@ class UserResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('name'),
-                TextColumn::make('email')
+                TextColumn::make('email'),
+                TextColumn::make('roles.name')
+                ->badge(true),
             ])
             ->filters([
                 //
