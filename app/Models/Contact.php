@@ -4,6 +4,7 @@ namespace App\Models;
 
 use App\Models\Tag;
 use App\Models\Note;
+use App\Models\Task;
 use App\Models\User;
 use App\Models\LeadSource;
 use Illuminate\Database\Eloquent\Model;
@@ -36,6 +37,11 @@ class Contact extends Model
     public function notes(): HasMany
     {
         return $this->hasMany(Note::class)->orderBy('created_at', 'desc');
+    }
+
+    public function tasks(): HasMany
+    {
+        return $this->hasMany(Task::class)->orderBy('created_at', 'desc');
     }
 
     public function owner(): BelongsTo

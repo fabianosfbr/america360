@@ -3,11 +3,14 @@
 namespace App\Filament\Resources;
 
 use Filament\Forms;
+use App\Models\Note;
+use App\Models\Task;
 use Filament\Tables;
 use App\Models\Account;
 use App\Models\Contact;
 use Filament\Forms\Form;
 use Filament\Tables\Table;
+use App\Enums\TaskTypeEnum;
 use Filament\Resources\Resource;
 use Filament\Tables\Actions\Action;
 use Filament\Forms\Components\Select;
@@ -15,13 +18,15 @@ use Filament\Forms\Components\Section;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
+use Filament\Tables\Actions\ActionGroup;
 use Filament\Forms\Components\RichEditor;
 use Illuminate\Database\Eloquent\Builder;
+use Filament\Forms\Components\DateTimePicker;
 use App\Filament\Resources\ContactResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\ContactResource\RelationManagers;
 use App\Filament\Resources\ContactResource\RelationManagers\NotesRelationManager;
-use App\Models\Note;
+use App\Filament\Resources\ContactResource\RelationManagers\TasksRelationManager;
 
 class ContactResource extends Resource
 {
@@ -111,24 +116,60 @@ class ContactResource extends Resource
                 //
             ])
             ->actions([
-                // Tables\Actions\ViewAction::make()
-                //     ->iconButton()
-                //     ->modalHeading('Contact')
-                //     ->modalDescription('Contact information'),
-                Action::make('notes')
-                    ->icon('heroicon-m-clipboard-document-check')
-                    ->iconButton()
-                    ->color('gray')
-                    ->form([
-                        RichEditor::make('body')
-                            ->label('Note')
-                            ->required()
-                            ->columnSpanFull(),
-                    ])
-                    ->action(function (Contact $record, array $data): void {
-                        $noteToAdd = new Note(['body' => $data['body']]);
-                        $record->notes()->save($noteToAdd);
-                    }),
+                ActionGroup::make([
+                    Action::make('notes')
+                        ->label('Anotação')
+                        ->icon('heroicon-m-clipboard-document-check')
+                        ->color('info')
+                        ->form([
+                            RichEditor::make('body')
+                                ->label('Note')
+                                ->required()
+                                ->columnSpanFull(),
+                        ])
+                        ->action(function (Contact $record, array $data): void {
+                            $noteToAdd = new Note(['body' => $data['body']]);
+                            $record->notes()->save($noteToAdd);
+
+                            Notification::make()
+                                ->success()
+                                ->title('Anotação criada com sucesso')
+                                ->send();
+                        }),
+                    Action::make('tasks')
+                        ->label('Tarefa')
+                        ->icon('fas-tasks')
+                        ->color('info')
+                        ->form([
+                            Select::make('type')
+                                ->label('Tipo de tarefa')
+                                ->options(TaskTypeEnum::class)
+                                ->required(),
+                            DateTimePicker::make('task_date')
+                                ->label('Data da tarefa')
+                                ->seconds(false)
+                                ->required(),
+                            RichEditor::make('description')
+                                ->label('Descrição')
+                                ->columnSpan(2)
+                                ->maxLength(255),
+                        ])
+                        ->action(function (Contact $record, array $data): void {
+                            $taskToAdd = new Task([
+                                'type' => $data['type'],
+                                'description' => $data['description'],
+                                'task_date' => $data['task_date']
+                            ]);
+                            $record->tasks()->save($taskToAdd);
+                            Notification::make()
+                                ->success()
+                                ->title('Tarefa criada com sucesso')
+                                ->send();
+                        }),
+
+
+                ])
+                    ->tooltip('Ações'),
             ])
             ->bulkActions([
                 // Tables\Actions\BulkActionGroup::make([
@@ -147,7 +188,8 @@ class ContactResource extends Resource
     public static function getRelations(): array
     {
         return [
-            NotesRelationManager::class
+            NotesRelationManager::class,
+            TasksRelationManager::class
         ];
     }
 

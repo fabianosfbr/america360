@@ -67,6 +67,7 @@ return array(
     'Propaganistas\\LaravelPhone\\' => array($vendorDir . '/propaganistas/laravel-phone/src'),
     'PhpParser\\' => array($vendorDir . '/nikic/php-parser/lib/PhpParser'),
     'PhpOption\\' => array($vendorDir . '/phpoption/phpoption/src/PhpOption'),
+    'OwenVoke\\BladeFontAwesome\\' => array($vendorDir . '/owenvoke/blade-fontawesome/src'),
     'NunoMaduro\\Collision\\' => array($vendorDir . '/nunomaduro/collision/src'),
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
     'Mockery\\' => array($vendorDir . '/mockery/mockery/library/Mockery'),
