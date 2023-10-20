@@ -18,7 +18,11 @@ class LeadSourceResource extends Resource
 {
     protected static ?string $model = LeadSource::class;
 
-    protected static ?string $navigationGroup = 'Settings';
+    protected static ?string $navigationGroup = 'Configurações';
+
+    protected static ?string $modelLabel = 'Oportunidade';
+
+    protected static ?string $pluralModelLabel = 'Oportunidades';
 
     public static function form(Form $form): Form
     {

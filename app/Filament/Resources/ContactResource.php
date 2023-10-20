@@ -27,7 +27,11 @@ class ContactResource extends Resource
 {
     protected static ?string $model = Contact::class;
 
-    protected static ?string $navigationGroup = 'Sales';
+    protected static ?string $navigationGroup = 'Marketing';
+
+    protected static ?string $modelLabel = 'Contato';
+
+    protected static ?string $pluralModelLabel = 'Contatos';
 
     public static function form(Form $form): Form
     {
@@ -44,6 +48,9 @@ class ContactResource extends Resource
                             ->columnSpan(3),
                         TextInput::make('phone')
                             ->tel()
+                            ->columnSpan(3),
+                        Select::make('owner_id')
+                            ->relationship('owner', 'name' )
                             ->columnSpan(3),
                         RichEditor::make('description')
                             ->columnSpanFull(),
@@ -70,7 +77,7 @@ class ContactResource extends Resource
             ->striped()
             ->columns([
                 TextColumn::make('name')
-                    ->label('Full name')
+                    ->label('Nome')
                     ->formatStateUsing(function ($record) {
                         $tagsList = view('contact.tagsList', ['tags' => $record->tags])->render();
 
@@ -81,10 +88,15 @@ class ContactResource extends Resource
                 TextColumn::make('email')
                     ->label('Email'),
                 TextColumn::make('phone')
-                    ->label('Mobile'),
-                TextColumn::make('leadSource.name'),
-                TextColumn::make('pipelineStage.name'),
+                    ->label('Telefone'),
+                TextColumn::make('leadSource.name')
+                ->label('Origem'),
+                TextColumn::make('pipelineStage.name')
+                ->label('Funil'),
+                TextColumn::make('owner.name')
+                    ->label('Responsável'),
                 TextColumn::make('created_at')
+                ->label('Data Registro')
                     ->dateTime('d-m-Y H:i')
                     ->toggleable(isToggledHiddenByDefault: false),
             ])

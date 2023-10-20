@@ -6,7 +6,7 @@ use Filament\Pages\Page;
 
 class Chat extends Page
 {
-    protected static ?string $navigationGroup = 'Sales';
+    protected static ?string $navigationGroup = 'Marketing';
 
     protected static string $view = 'filament.pages.chat';
 }

@@ -149,6 +149,7 @@ class ComposerStaticInite087aa2e0cf01acd1fb6fde35fc2419a
         ),
         'L' => 
         array (
+            'Lucascudo\\LaravelPtBRLocalization\\' => 34,
             'Livewire\\' => 9,
             'League\\Uri\\' => 11,
             'League\\MimeTypeDetection\\' => 25,
@@ -496,6 +497,10 @@ class ComposerStaticInite087aa2e0cf01acd1fb6fde35fc2419a
         array (
             0 => __DIR__ . '/..' . '/masterminds/html5/src',
         ),
+        'Lucascudo\\LaravelPtBRLocalization\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/lucascudo/laravel-pt-br-localization/src',
+        ),
         'Livewire\\' => 
         array (
             0 => __DIR__ . '/..' . '/livewire/livewire/src',
@@ -791,8 +796,11 @@ class ComposerStaticInite087aa2e0cf01acd1fb6fde35fc2419a
         'App\\Models\\Device' => __DIR__ . '/../..' . '/app/Models/Device.php',
         'App\\Models\\LeadSource' => __DIR__ . '/../..' . '/app/Models/LeadSource.php',
         'App\\Models\\Note' => __DIR__ . '/../..' . '/app/Models/Note.php',
+        'App\\Models\\Permission' => __DIR__ . '/../..' . '/app/Models/Permission.php',
         'App\\Models\\PipelineStage' => __DIR__ . '/../..' . '/app/Models/PipelineStage.php',
+        'App\\Models\\Role' => __DIR__ . '/../..' . '/app/Models/Role.php',
         'App\\Models\\Tag' => __DIR__ . '/../..' . '/app/Models/Tag.php',
+        'App\\Models\\Traits\\Schedulable' => __DIR__ . '/../..' . '/app/Models/Traits/Schedulable.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
@@ -935,6 +943,7 @@ class ComposerStaticInite087aa2e0cf01acd1fb6fde35fc2419a
         'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/DatabaseSeeder.php',
         'Database\\Seeders\\LeadSourceSeeder' => __DIR__ . '/../..' . '/database/seeders/LeadSourceSeeder.php',
         'Database\\Seeders\\PipelineStageSeeder' => __DIR__ . '/../..' . '/database/seeders/PipelineStageSeeder.php',
+        'Database\\Seeders\\RolesAndPermissionsSeeder' => __DIR__ . '/../..' . '/database/seeders/RolesAndPermissionsSeeder.php',
         'Database\\Seeders\\TagSeeder' => __DIR__ . '/../..' . '/database/seeders/TagSeeder.php',
         'DateError' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateError.php',
         'DateException' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateException.php',
@@ -4803,6 +4812,7 @@ class ComposerStaticInite087aa2e0cf01acd1fb6fde35fc2419a
         'Livewire\\WithFileUploads' => __DIR__ . '/..' . '/livewire/livewire/src/WithFileUploads.php',
         'Livewire\\WithPagination' => __DIR__ . '/..' . '/livewire/livewire/src/WithPagination.php',
         'Livewire\\Wrapped' => __DIR__ . '/..' . '/livewire/livewire/src/Wrapped.php',
+        'Lucascudo\\LaravelPtBRLocalization\\LaravelPtBRLocalizationServiceProvider' => __DIR__ . '/..' . '/lucascudo/laravel-pt-br-localization/src/LaravelPtBRLocalizationServiceProvider.php',
         'Masterminds\\HTML5' => __DIR__ . '/..' . '/masterminds/html5/src/HTML5.php',
         'Masterminds\\HTML5\\Elements' => __DIR__ . '/..' . '/masterminds/html5/src/HTML5/Elements.php',
         'Masterminds\\HTML5\\Entities' => __DIR__ . '/..' . '/masterminds/html5/src/HTML5/Entities.php',

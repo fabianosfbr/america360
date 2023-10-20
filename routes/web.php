@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', Home::class)->name('lading.page');
 
 Route::get('/login', function () {
-    return to_route(route('filament.admin.auth.login'))->name('login');
+    return to_route('filament.admin.auth.login');
+})->name('login');
 
-});
+Route::get('/login', fn()=> to_route('filament.admin.auth.login'))->name('login');

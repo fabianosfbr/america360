@@ -18,7 +18,11 @@ class PipelineStageResource extends Resource
 {
     protected static ?string $model = PipelineStage::class;
 
-    protected static ?string $navigationGroup = 'Settings';
+    protected static ?string $navigationGroup = 'Configurações';
+
+    protected static ?string $modelLabel = 'Funil';
+
+    protected static ?string $pluralModelLabel = 'Funil';
 
 
     public static function form(Form $form): Form

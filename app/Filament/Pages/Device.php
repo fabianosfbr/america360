@@ -15,7 +15,11 @@ use App\Services\EvolutionApi\Instance\InstanceService;
 
 class Device extends Page
 {
-    protected static ?string $navigationGroup = 'Settings';
+    protected static ?string $navigationGroup = 'Configurações';
+
+
+    protected static ?string $navigationLabel = 'Aparelho';
+
 
 
     protected static string $view = 'filament.pages.device';
@@ -59,7 +63,7 @@ class Device extends Page
     {
         return [
             Actions\CreateAction::make()
-                ->label('Add Device')
+                ->label('Adicionar')
                 ->modalWidth('sm')
                 ->createAnother(false)
                 ->form([
