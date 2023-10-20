@@ -12,6 +12,7 @@ use Database\Seeders\ContactSeeder;
 use Illuminate\Support\Facades\Hash;
 use Database\Seeders\LeadSourceSeeder;
 use Database\Seeders\PipelineStageSeeder;
+use Database\Seeders\RolesAndPermissionsSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -20,18 +21,29 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        User::factory()->create([
-            'name' => 'Administrador',
-            'email' => 'admin@email.com',
-            'password' => Hash::make('asdfasdf'),
-        ]);
+
 
         $this->call([
             LeadSourceSeeder::class,
             PipelineStageSeeder::class,
             TagSeeder::class,
             ContactSeeder::class,
+            RolesAndPermissionsSeeder::class,
 
         ]);
+
+        $admin = User::factory()->create([
+            'name' => 'Administrador',
+            'email' => 'admin@email.com',
+            'password' => Hash::make('asdfasdf'),
+        ]);
+        $admin->assignRole('admin');
+
+        $teacher = User::factory()->create([
+            'name' => 'Teacher',
+            'email' => 'teacher@email.com',
+            'password' => Hash::make('asdfasdf'),
+        ]);
+        $teacher->assignRole('teacher');
     }
 }
