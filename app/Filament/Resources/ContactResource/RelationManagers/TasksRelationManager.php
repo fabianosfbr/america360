@@ -45,6 +45,7 @@ class TasksRelationManager extends RelationManager
     {
         return $table
             ->recordTitleAttribute('description')
+            ->emptyStateDescription('Depois de criar sua primeira tarefa, ela aparecerá aqui.')
             ->columns([
                 TextColumn::make('description')
                     ->label("Descrição")

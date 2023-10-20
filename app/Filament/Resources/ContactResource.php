@@ -87,6 +87,7 @@ class ContactResource extends Resource
     {
         return $table
             ->striped()
+            ->emptyStateDescription('Depois de cadastrar seu primeira cliente, ele aparecerá aqui.')
             ->columns([
                 TextColumn::make('name')
                     ->label('Nome')

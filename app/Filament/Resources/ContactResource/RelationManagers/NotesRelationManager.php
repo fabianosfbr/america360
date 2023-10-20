@@ -33,6 +33,7 @@ class NotesRelationManager extends RelationManager
     {
         return $table
             ->recordTitleAttribute('body')
+            ->emptyStateDescription('Depois de criar sua primeira anotação, ela aparecerá aqui.')
             ->columns([
                 Tables\Columns\TextColumn::make('body')
                     ->label("Conteúdo")
