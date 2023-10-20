@@ -35,7 +35,7 @@ class Contact extends Model
 
     public function notes(): HasMany
     {
-        return $this->hasMany(Note::class);
+        return $this->hasMany(Note::class)->orderBy('created_at', 'desc');
     }
 
     public function owner(): BelongsTo

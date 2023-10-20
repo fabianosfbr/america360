@@ -16,12 +16,14 @@ class NotesRelationManager extends RelationManager
 {
     protected static string $relationship = 'notes';
 
+    protected static ?string $title = 'Anotação';
+
     public function form(Form $form): Form
     {
         return $form
             ->schema([
                 RichEditor::make('body')
-                    ->label('Note')
+                    ->label('Anotação')
                     ->required()
                     ->columnSpanFull(),
             ]);
@@ -33,21 +35,24 @@ class NotesRelationManager extends RelationManager
             ->recordTitleAttribute('body')
             ->columns([
                 Tables\Columns\TextColumn::make('body')
-                    ->label("Message")
+                    ->label("Conteúdo")
                     ->searchable()
                     ->html()
                     ->limit(255)
-                    ->description(fn (Note $note) => $note->created_at->format('M d, Y')),
+                    ->description(fn (Note $note) => $note->created_at->format('d-m-Y H:i')),
             ])
             ->filters([
                 //
             ])
             ->headerActions([
-                Tables\Actions\CreateAction::make(),
+                Tables\Actions\CreateAction::make()
+                    ->label('Adicionar'),
             ])
             ->actions([
-                Tables\Actions\EditAction::make(),
-                Tables\Actions\DeleteAction::make(),
+                Tables\Actions\EditAction::make()
+                    ->iconButton(),
+                Tables\Actions\DeleteAction::make()
+                    ->iconButton(),
             ])
             ->bulkActions([
                 // Tables\Actions\BulkActionGroup::make([

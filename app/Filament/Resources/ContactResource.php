@@ -43,24 +43,31 @@ class ContactResource extends Resource
                             ->label('Nome')
                             ->columnSpan(3),
                         TextInput::make('email')
+                            ->label('Email')
                             ->required()
                             ->email()
                             ->columnSpan(3),
                         TextInput::make('phone')
+                            ->label('Telefone')
                             ->tel()
                             ->columnSpan(3),
                         Select::make('owner_id')
-                            ->relationship('owner', 'name' )
+                            ->label('Responsável')
+                            ->relationship('owner', 'name')
                             ->columnSpan(3),
                         RichEditor::make('description')
+                            ->label('Descrição')
                             ->columnSpanFull(),
                         Select::make('lead_source_id')
+                            ->label('Origem')
                             ->relationship('leadSource', 'name')
                             ->columnSpan(1),
                         Select::make('pipeline_stage_id')
+                            ->label('Estágio do funil')
                             ->relationship('pipelineStage', 'name')
                             ->columnSpan(1),
                         Select::make('tags')
+                            ->label('Tags')
                             ->relationship('tags', 'name')
                             ->preload()
                             ->multiple()
@@ -90,13 +97,13 @@ class ContactResource extends Resource
                 TextColumn::make('phone')
                     ->label('Telefone'),
                 TextColumn::make('leadSource.name')
-                ->label('Origem'),
+                    ->label('Origem'),
                 TextColumn::make('pipelineStage.name')
-                ->label('Funil'),
+                    ->label('Funil'),
                 TextColumn::make('owner.name')
                     ->label('Responsável'),
                 TextColumn::make('created_at')
-                ->label('Data Registro')
+                    ->label('Data Registro')
                     ->dateTime('d-m-Y H:i')
                     ->toggleable(isToggledHiddenByDefault: false),
             ])
