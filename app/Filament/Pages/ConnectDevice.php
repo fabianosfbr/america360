@@ -12,6 +12,8 @@ class ConnectDevice extends Page
 
     protected static string $view = 'filament.pages.connect-device';
 
+    protected ?string $heading = 'Conectar aparelho';
+
     protected static ?string $slug = 'device/connect';
 
     protected static bool $shouldRegisterNavigation = false;

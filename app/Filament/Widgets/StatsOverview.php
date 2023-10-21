@@ -17,14 +17,14 @@ class StatsOverview extends BaseWidget
         $connected = '0';
         $disconnected = '1';
         $phone = ' - ';
-        $connectedText = 'disconnected';
+        $connectedText = 'desconectado';
         $deviceRoute = '#';
 
         if ($device) {
             $connected =  $device->is_enabled ? '1' : '0';
             $disconnected = $device->is_enabled ? '0' : '1';
             $phone = $device->phone;
-            $connectedText = $device->is_enabled ? 'connected' : 'disconnected';
+            $connectedText = $device->is_enabled ? 'conectado' : 'desconectado';
             $deviceRoute = route('filament.admin.pages.device.connect', ['device' => $device->id]);
         }
 
@@ -47,18 +47,18 @@ class StatsOverview extends BaseWidget
                         <div class="text-xs w-full flex items-center gap-2 mt-2">
                             <a class="text-primary-400 hover:text-primary-500 hover:cursor-pointer"
                                 href="' . $deviceRoute . '">
-                                Connect
+                                Conectar
                             </a>
                             <span class="text-gray-300">|</span>
                             <a class="text-primary-400 hover:text-primary-500 hover:cursor-pointer"
                                href="#">
-                                Restart
+                                Reiniciar
                             </a>
                         </div>
                     ')
                 ),
-            Stat::make('Connected', $connected),
-            Stat::make('Disconnected', $disconnected),
+            Stat::make('Conectado', $connected),
+            Stat::make('Desconectado', $disconnected),
         ];
     }
 }

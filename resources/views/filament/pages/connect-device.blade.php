@@ -1,7 +1,7 @@
 <x-filament-panels::page>
     <a href="{{ route('filament.admin.pages.device') }}"
         class="flex items-center gap-1 text-gray-500 hover:text-gray-700 font-medium text-xs">
-         <x-heroicon-o-arrow-left class="w-4 h-4"/> Back to devices
+         <x-heroicon-o-arrow-left class="w-4 h-4"/> Voltar ao dispositivo
      </a>
     <div class="mt-6 grid grid-cols-1 gap-6 md:grid-cols-12">
         <div class="md:col-span-6 lg:col-span-8">
@@ -31,11 +31,11 @@
                             </svg>
                         </span>
                         <h3 class="mb-1 flex items-center text-lg font-semibold text-gray-900 dark:text-white">
-                            Step 1
+                            Passo 1
                         </h3>
                         <div
                             class="ml-3 mr-2 rounded px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-300">
-                            Open WhatsApp on your phone
+                            Abra o whatsapp no seu aparelho
                         </div>
 
 
@@ -50,11 +50,11 @@
                             </svg>
                         </span>
                         <h3 class="mb-1 flex items-center text-lg font-semibold text-gray-900 dark:text-white">
-                            Step 2
+                            Passo 2
                         </h3>
                         <div
                             class="ml-3 mr-2 rounded px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-300">
-                            Tap Menu or Settings and select Linked Devices
+                            Toque em Menu ou Configurações e selecione Dispositivos vinculados
                         </div>
                     </li>
                     <li class="mb-10 ml-6">
@@ -67,11 +67,11 @@
                             </svg>
                         </span>
                         <h3 class="mb-1 flex items-center text-lg font-semibold text-gray-900 dark:text-white">
-                            Step 3
+                            Passo 3
                         </h3>
                         <div
                             class="ml-3 mr-2 rounded px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-300">
-                            Tap on Link a Device
+                            Toque em Vincular um dispositivo
                         </div>
                     </li>
                     <li class="mb-10 ml-6">
@@ -84,11 +84,11 @@
                             </svg>
                         </span>
                         <h3 class="mb-1 flex items-center text-lg font-semibold text-gray-900 dark:text-white">
-                            Step 4
+                            Passo 4
                         </h3>
                         <div
                             class="ml-3 mr-2 rounded px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-300">
-                            Point your phone to this screen to capture the code
+                            Aponte seu aparelho para esta tela para capturar o código
                         </div>
                     </li>
                 </ol>

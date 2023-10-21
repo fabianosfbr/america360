@@ -20,11 +20,14 @@ class Device extends Page
 
     protected static ?string $navigationLabel = 'Aparelho';
 
-
+    protected ?string $heading = 'Aparelho';
 
     protected static string $view = 'filament.pages.device';
 
     public $device;
+
+
+
 
     public function mount()
     {
@@ -80,6 +83,7 @@ class Device extends Page
                     return $data;
                 })
                 ->action(function (Actions\CreateAction $action, array $data) {
+
 
                     $device = new DeviceModel();
                     $device->name = $data['name'];
