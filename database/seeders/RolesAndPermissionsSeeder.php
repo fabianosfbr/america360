@@ -26,10 +26,15 @@ class RolesAndPermissionsSeeder extends Seeder
         Permission::create(['name' => 'create contact']);
         Permission::create(['name' => 'view contact']);
 
+
+
         Role::create(['name' => 'admin'])
             ->givePermissionTo(Permission::all());
 
-        $role = Role::create(['name' => 'teacher'])
+        Role::create(['name' => 'professor'])
+            ->givePermissionTo(['edit contact', 'view contact', 'create contact', 'delete contact']);
+
+        Role::create(['name' => 'vendedor'])
             ->givePermissionTo(['edit contact', 'view contact', 'create contact', 'delete contact']);
     }
 }

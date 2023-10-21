@@ -39,11 +39,18 @@ class DatabaseSeeder extends Seeder
         ]);
         $admin->assignRole('admin');
 
-        $teacher = User::factory()->create([
-            'name' => 'Teacher',
-            'email' => 'teacher@email.com',
+        $professor = User::factory()->create([
+            'name' => 'Professor',
+            'email' => 'professor@email.com',
             'password' => Hash::make('asdfasdf'),
         ]);
-        $teacher->assignRole('teacher');
+        $professor->assignRole('professor');
+
+        $vendedor = User::factory()->create([
+            'name' => 'Vendedor',
+            'email' => 'vendedor@email.com',
+            'password' => Hash::make('asdfasdf'),
+        ]);
+        $vendedor->assignRole('vendedor');
     }
 }
