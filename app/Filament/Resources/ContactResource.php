@@ -15,6 +15,7 @@ use Filament\Resources\Resource;
 use Filament\Tables\Actions\Action;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Section;
+use Filament\Tables\Actions\EditAction;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
@@ -72,7 +73,7 @@ class ContactResource extends Resource
                             ->relationship('pipelineStage', 'name')
                             ->columnSpan(1),
                         Select::make('tags')
-                            ->label('Tags')
+                            ->label('Marcadores')
                             ->relationship('tags', 'name')
                             ->preload()
                             ->multiple()
@@ -118,8 +119,11 @@ class ContactResource extends Resource
             ])
             ->actions([
                 ActionGroup::make([
+                    EditAction::make()
+                    ->label('Editar contato')
+                    ->color('info'),
                     Action::make('notes')
-                        ->label('Anotação')
+                        ->label('Adicionar anotação')
                         ->icon('heroicon-m-clipboard-document-check')
                         ->color('info')
                         ->form([
@@ -138,7 +142,7 @@ class ContactResource extends Resource
                                 ->send();
                         }),
                     Action::make('tasks')
-                        ->label('Tarefa')
+                        ->label('Adicionar tarefa')
                         ->icon('fas-tasks')
                         ->color('info')
                         ->form([

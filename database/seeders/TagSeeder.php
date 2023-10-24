@@ -14,14 +14,26 @@ class TagSeeder extends Seeder
     public function run(): void
     {
         $tags = [
-            'Low',
-            'Medium',
-            'High',
+            'Baixo',
+            'Medio',
+            'Alta',
             'VIP'
         ];
 
         foreach ($tags as $tag) {
-            Tag::create(['name' => $tag]);
+            Tag::create([
+                'name' => $tag,
+                'color' => $this->randomHexColor(),
+            ]);
         }
+    }
+
+    private function randomHexColor() {
+        $letters = '0123456789ABCDEF';
+        $color = '#';
+        for ($i = 0; $i < 6; $i++) {
+            $color .= $letters[rand(0, 15)];
+        }
+        return $color;
     }
 }
