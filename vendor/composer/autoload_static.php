@@ -28,17 +28,16 @@ class ComposerStaticInite087aa2e0cf01acd1fb6fde35fc2419a
         'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
         'b69d5f1f95cd1ed438c038b6cbcc45b5' => __DIR__ . '/..' . '/filament/notifications/src/Testing/Autoload.php',
         '3bd81c9b8fcc150b69d8b63b4d2ccf23' => __DIR__ . '/..' . '/spatie/flare-client-php/src/helpers.php',
-        '89e9938b64b06cc502d7ceca69a380fe' => __DIR__ . '/..' . '/filament/filament/src/global_helpers.php',
-        'ebb446bb6d02e998480945fbbb73dc64' => __DIR__ . '/..' . '/filament/filament/src/helpers.php',
         '35a6ad97d21e794e7e22a17d806652e4' => __DIR__ . '/..' . '/nunomaduro/termwind/src/Functions.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         '09f6b20656683369174dd6fa83b7e5fb' => __DIR__ . '/..' . '/symfony/polyfill-uuid/bootstrap.php',
+        '89e9938b64b06cc502d7ceca69a380fe' => __DIR__ . '/..' . '/filament/filament/src/global_helpers.php',
+        'ebb446bb6d02e998480945fbbb73dc64' => __DIR__ . '/..' . '/filament/filament/src/helpers.php',
         '47e1160838b5e5a10346ac4084b58c23' => __DIR__ . '/..' . '/laravel/prompts/src/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '017b24472353920ed42bb364f7653c43' => __DIR__ . '/..' . '/propaganistas/laravel-phone/src/helpers.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
-        '377b22b161c09ed6e5152de788ca020a' => __DIR__ . '/..' . '/spatie/laravel-permission/src/helpers.php',
         '51fcf4e06c07cc00c920b44bcd900e7a' => __DIR__ . '/..' . '/thecodingmachine/safe/deprecated/apc.php',
         '288267919fedd3829a7732b5fb202197' => __DIR__ . '/..' . '/thecodingmachine/safe/deprecated/array.php',
         'a88cd08cfbf1600f7d5de6e587eee1fa' => __DIR__ . '/..' . '/thecodingmachine/safe/deprecated/datetime.php',
@@ -137,6 +136,7 @@ class ComposerStaticInite087aa2e0cf01acd1fb6fde35fc2419a
         'a1cfe24d14977df6878b9bf804af2d1c' => __DIR__ . '/..' . '/nunomaduro/collision/src/Adapters/Phpunit/Autoload.php',
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
         '320163ac6b93aebe3dc25b60a0533d56' => __DIR__ . '/..' . '/spatie/laravel-ignition/src/helpers.php',
+        '377b22b161c09ed6e5152de788ca020a' => __DIR__ . '/..' . '/spatie/laravel-permission/src/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -323,7 +323,6 @@ class ComposerStaticInite087aa2e0cf01acd1fb6fde35fc2419a
         'A' => 
         array (
             'App\\' => 4,
-            'Althinect\\FilamentSpatieRolesPermissions\\' => 41,
         ),
     );
 
@@ -819,33 +818,9 @@ class ComposerStaticInite087aa2e0cf01acd1fb6fde35fc2419a
             0 => __DIR__ . '/../..' . '/app',
             1 => __DIR__ . '/..' . '/laravel/pint/app',
         ),
-        'Althinect\\FilamentSpatieRolesPermissions\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/althinect/filament-spatie-roles-permissions/src',
-        ),
     );
 
     public static $classMap = array (
-        'Althinect\\FilamentSpatieRolesPermissions\\Commands\\Permission' => __DIR__ . '/..' . '/althinect/filament-spatie-roles-permissions/src/Commands/Permission.php',
-        'Althinect\\FilamentSpatieRolesPermissions\\Concerns\\HasSuperAdmin' => __DIR__ . '/..' . '/althinect/filament-spatie-roles-permissions/src/Concerns/HasSuperAdmin.php',
-        'Althinect\\FilamentSpatieRolesPermissions\\FilamentSpatieRolesPermissions' => __DIR__ . '/..' . '/althinect/filament-spatie-roles-permissions/src/FilamentSpatieRolesPermissions.php',
-        'Althinect\\FilamentSpatieRolesPermissions\\FilamentSpatieRolesPermissionsFacade' => __DIR__ . '/..' . '/althinect/filament-spatie-roles-permissions/src/FilamentSpatieRolesPermissionsFacade.php',
-        'Althinect\\FilamentSpatieRolesPermissions\\FilamentSpatieRolesPermissionsPlugin' => __DIR__ . '/..' . '/althinect/filament-spatie-roles-permissions/src/FilamentSpatieRolesPermissionsPlugin.php',
-        'Althinect\\FilamentSpatieRolesPermissions\\FilamentSpatieRolesPermissionsServiceProvider' => __DIR__ . '/..' . '/althinect/filament-spatie-roles-permissions/src/FilamentSpatieRolesPermissionsServiceProvider.php',
-        'Althinect\\FilamentSpatieRolesPermissions\\Middleware\\SyncSpatiePermissionsWithFilamentTenants' => __DIR__ . '/..' . '/althinect/filament-spatie-roles-permissions/src/Middleware/SyncSpatiePermissionsWithFilamentTenants.php',
-        'Althinect\\FilamentSpatieRolesPermissions\\Resources\\PermissionResource' => __DIR__ . '/..' . '/althinect/filament-spatie-roles-permissions/src/Resources/PermissionResource.php',
-        'Althinect\\FilamentSpatieRolesPermissions\\Resources\\PermissionResource\\Pages\\CreatePermission' => __DIR__ . '/..' . '/althinect/filament-spatie-roles-permissions/src/Resources/PermissionResource/Pages/CreatePermission.php',
-        'Althinect\\FilamentSpatieRolesPermissions\\Resources\\PermissionResource\\Pages\\EditPermission' => __DIR__ . '/..' . '/althinect/filament-spatie-roles-permissions/src/Resources/PermissionResource/Pages/EditPermission.php',
-        'Althinect\\FilamentSpatieRolesPermissions\\Resources\\PermissionResource\\Pages\\ListPermissions' => __DIR__ . '/..' . '/althinect/filament-spatie-roles-permissions/src/Resources/PermissionResource/Pages/ListPermissions.php',
-        'Althinect\\FilamentSpatieRolesPermissions\\Resources\\PermissionResource\\Pages\\ViewPermission' => __DIR__ . '/..' . '/althinect/filament-spatie-roles-permissions/src/Resources/PermissionResource/Pages/ViewPermission.php',
-        'Althinect\\FilamentSpatieRolesPermissions\\Resources\\PermissionResource\\RelationManager\\RoleRelationManager' => __DIR__ . '/..' . '/althinect/filament-spatie-roles-permissions/src/Resources/PermissionResource/RelationManager/RoleRelationManager.php',
-        'Althinect\\FilamentSpatieRolesPermissions\\Resources\\RoleResource' => __DIR__ . '/..' . '/althinect/filament-spatie-roles-permissions/src/Resources/RoleResource.php',
-        'Althinect\\FilamentSpatieRolesPermissions\\Resources\\RoleResource\\Pages\\CreateRole' => __DIR__ . '/..' . '/althinect/filament-spatie-roles-permissions/src/Resources/RoleResource/Pages/CreateRole.php',
-        'Althinect\\FilamentSpatieRolesPermissions\\Resources\\RoleResource\\Pages\\EditRole' => __DIR__ . '/..' . '/althinect/filament-spatie-roles-permissions/src/Resources/RoleResource/Pages/EditRole.php',
-        'Althinect\\FilamentSpatieRolesPermissions\\Resources\\RoleResource\\Pages\\ListRoles' => __DIR__ . '/..' . '/althinect/filament-spatie-roles-permissions/src/Resources/RoleResource/Pages/ListRoles.php',
-        'Althinect\\FilamentSpatieRolesPermissions\\Resources\\RoleResource\\Pages\\ViewRole' => __DIR__ . '/..' . '/althinect/filament-spatie-roles-permissions/src/Resources/RoleResource/Pages/ViewRole.php',
-        'Althinect\\FilamentSpatieRolesPermissions\\Resources\\RoleResource\\RelationManager\\PermissionRelationManager' => __DIR__ . '/..' . '/althinect/filament-spatie-roles-permissions/src/Resources/RoleResource/RelationManager/PermissionRelationManager.php',
-        'Althinect\\FilamentSpatieRolesPermissions\\Resources\\RoleResource\\RelationManager\\UserRelationManager' => __DIR__ . '/..' . '/althinect/filament-spatie-roles-permissions/src/Resources/RoleResource/RelationManager/UserRelationManager.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Enums\\ProductTypeEnum' => __DIR__ . '/../..' . '/app/Enums/ProductTypeEnum.php',
         'App\\Enums\\TaskTypeEnum' => __DIR__ . '/../..' . '/app/Enums/TaskTypeEnum.php',
@@ -863,6 +838,10 @@ class ComposerStaticInite087aa2e0cf01acd1fb6fde35fc2419a
         'App\\Filament\\Resources\\LeadSourceResource\\Pages\\CreateLeadSource' => __DIR__ . '/../..' . '/app/Filament/Resources/LeadSourceResource/Pages/CreateLeadSource.php',
         'App\\Filament\\Resources\\LeadSourceResource\\Pages\\EditLeadSource' => __DIR__ . '/../..' . '/app/Filament/Resources/LeadSourceResource/Pages/EditLeadSource.php',
         'App\\Filament\\Resources\\LeadSourceResource\\Pages\\ListLeadSources' => __DIR__ . '/../..' . '/app/Filament/Resources/LeadSourceResource/Pages/ListLeadSources.php',
+        'App\\Filament\\Resources\\PermissionResource' => __DIR__ . '/../..' . '/app/Filament/Resources/PermissionResource.php',
+        'App\\Filament\\Resources\\PermissionResource\\Pages\\CreatePermission' => __DIR__ . '/../..' . '/app/Filament/Resources/PermissionResource/Pages/CreatePermission.php',
+        'App\\Filament\\Resources\\PermissionResource\\Pages\\EditPermission' => __DIR__ . '/../..' . '/app/Filament/Resources/PermissionResource/Pages/EditPermission.php',
+        'App\\Filament\\Resources\\PermissionResource\\Pages\\ListPermissions' => __DIR__ . '/../..' . '/app/Filament/Resources/PermissionResource/Pages/ListPermissions.php',
         'App\\Filament\\Resources\\PipelineStageResource' => __DIR__ . '/../..' . '/app/Filament/Resources/PipelineStageResource.php',
         'App\\Filament\\Resources\\PipelineStageResource\\Pages\\CreatePipelineStage' => __DIR__ . '/../..' . '/app/Filament/Resources/PipelineStageResource/Pages/CreatePipelineStage.php',
         'App\\Filament\\Resources\\PipelineStageResource\\Pages\\EditPipelineStage' => __DIR__ . '/../..' . '/app/Filament/Resources/PipelineStageResource/Pages/EditPipelineStage.php',

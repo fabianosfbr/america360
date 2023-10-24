@@ -3,22 +3,13 @@
         'name' => 'laravel/laravel',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'f1323b1abe1c44318678eba45c93ccf0dc651a18',
+        'reference' => '362a9f5f1615e5e2fc052d6f6c5605514d07a109',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
         'dev' => true,
     ),
     'versions' => array(
-        'althinect/filament-spatie-roles-permissions' => array(
-            'pretty_version' => 'v2.1.1',
-            'version' => '2.1.1.0',
-            'reference' => '2da5a6ae19c6be454b906952ba0e376c16b34c48',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../althinect/filament-spatie-roles-permissions',
-            'aliases' => array(),
-            'dev_requirement' => false,
-        ),
         'blade-ui-kit/blade-heroicons' => array(
             'pretty_version' => '2.1.0',
             'version' => '2.1.0.0',
@@ -580,7 +571,7 @@
         'laravel/laravel' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'f1323b1abe1c44318678eba45c93ccf0dc651a18',
+            'reference' => '362a9f5f1615e5e2fc052d6f6c5605514d07a109',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

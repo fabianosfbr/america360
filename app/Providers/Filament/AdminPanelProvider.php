@@ -61,7 +61,6 @@ class AdminPanelProvider extends PanelProvider
                 Widgets\AccountWidget::class,
                 Widgets\FilamentInfoWidget::class,
             ])
-            ->plugin(FilamentSpatieRolesPermissionsPlugin::make())
             ->middleware([
                 EncryptCookies::class,
                 AddQueuedCookiesToResponse::class,
