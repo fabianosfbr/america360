@@ -22,7 +22,7 @@ class PipelineStageResource extends Resource
 
     protected static ?string $modelLabel = 'Funil';
 
-    protected static ?string $pluralModelLabel = 'Funil';
+    protected static ?string $pluralModelLabel = 'Funis';
 
 
     public static function form(Form $form): Form
@@ -30,13 +30,16 @@ class PipelineStageResource extends Resource
         return $form
             ->schema([
                 Forms\Components\TextInput::make('name')
+                    ->label('Nome')
                     ->required()
                     ->maxLength(255),
                 Forms\Components\TextInput::make('position')
+                    ->label('Ordem')
                     ->required()
                     ->numeric()
                     ->default(0),
                 Forms\Components\Toggle::make('is_default')
+                    ->label('Padrão')
                     ->required(),
             ]);
     }
