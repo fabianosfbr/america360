@@ -23,8 +23,17 @@ class TagSeeder extends Seeder
         foreach ($tags as $tag) {
             Tag::create([
                 'name' => $tag,
-                'color' => sprintf('#06x', random_int(0, 0xFFFFFF)),
+                'color' => $this->randomHexColor(),
             ]);
         }
+    }
+
+    private function randomHexColor() {
+        $letters = '0123456789ABCDEF';
+        $color = '#';
+        for ($i = 0; $i < 6; $i++) {
+            $color .= $letters[rand(0, 15)];
+        }
+        return $color;
     }
 }
