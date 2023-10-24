@@ -22,9 +22,9 @@ class TagResource extends Resource
 
     protected static ?string $navigationGroup = 'Configurações';
 
-    protected static ?string $modelLabel = 'Tag';
+    protected static ?string $modelLabel = 'Marcador';
 
-    protected static ?string $pluralModelLabel = 'Tags';
+    protected static ?string $pluralModelLabel = 'Marcadores';
 
     public static function form(Form $form): Form
     {
@@ -42,14 +42,18 @@ class TagResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('name')
+                ->label('Nome')
                     ->searchable(),
                 Tables\Columns\ColorColumn::make('color')
+                ->label('Cor')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
+                ->label('Criado em')
                     ->dateTime('d-m-Y H:i')
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
                 Tables\Columns\TextColumn::make('updated_at')
+                ->label('Atualizado em')
                     ->dateTime('d-m-Y H:i')
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
@@ -64,8 +68,8 @@ class TagResource extends Resource
                     if ($record->contacts()->count() > 0) {
                         Notification::make()
                             ->danger()
-                            ->title('Tag is in use')
-                            ->body('Tag is in use by customers.')
+                            ->title('Marcador em uso')
+                            ->body('Marcador já foi atribuído a um ou mais contatos.')
                             ->send();
 
                         return;
@@ -73,8 +77,8 @@ class TagResource extends Resource
 
                     Notification::make()
                         ->success()
-                        ->title('Tag deleted')
-                        ->body('Tag has been deleted.')
+                        ->title('Marcador removido')
+                        ->body('O marcador foi removido com sucesso.')
                         ->send();
 
                     $record->delete();

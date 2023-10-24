@@ -73,7 +73,7 @@ class ContactResource extends Resource
                             ->relationship('pipelineStage', 'name')
                             ->columnSpan(1),
                         Select::make('tags')
-                            ->label('Tags')
+                            ->label('Marcadores')
                             ->relationship('tags', 'name')
                             ->preload()
                             ->multiple()

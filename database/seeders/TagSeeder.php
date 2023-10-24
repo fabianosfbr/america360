@@ -14,14 +14,17 @@ class TagSeeder extends Seeder
     public function run(): void
     {
         $tags = [
-            'Low',
-            'Medium',
-            'High',
+            'Baixo',
+            'Medio',
+            'Alta',
             'VIP'
         ];
 
         foreach ($tags as $tag) {
-            Tag::create(['name' => $tag]);
+            Tag::create([
+                'name' => $tag,
+                'color' => sprintf('#06x', random_int(0, 0xFFFFFF)),
+            ]);
         }
     }
 }
