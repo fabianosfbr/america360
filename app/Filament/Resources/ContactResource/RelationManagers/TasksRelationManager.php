@@ -56,6 +56,7 @@ class TasksRelationManager extends RelationManager
                     ->label('Data da tarefa')
                     ->dateTime('d-m-Y H:i'),
             ])
+            ->defaultSort('task_date', 'asc')
             ->filters([
                 //
             ])
