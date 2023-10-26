@@ -89,6 +89,9 @@ class PipelineStageResource extends Resource
                 })
                 ->modalWidth('md'),
             ])
+            ->recordUrl(function () {
+                return null;
+            })
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
                     Tables\Actions\DeleteBulkAction::make(),

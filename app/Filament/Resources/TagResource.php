@@ -84,6 +84,9 @@ class TagResource extends Resource
                     $record->delete();
                 })
             ])
+            ->recordUrl(function () {
+                return null;
+            })
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
                     Tables\Actions\DeleteBulkAction::make(),

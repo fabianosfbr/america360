@@ -76,6 +76,9 @@ class LeadSourceResource extends Resource
                     })
                     ->requiresConfirmation()
             ])
+            ->recordUrl(function () {
+                return null;
+            })
             ->bulkActions([]);
     }
 

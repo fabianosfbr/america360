@@ -78,6 +78,9 @@ class PermissionResource extends Resource
                 Tables\Actions\EditAction::make()
                 ->label('Editar'),
             ])
+            ->recordUrl(function () {
+                return null;
+            })
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
                     Tables\Actions\DeleteBulkAction::make(),

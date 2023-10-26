@@ -43,10 +43,23 @@ class ContactResource extends Resource
     {
         return $form
             ->schema([
-                Section::make()
+                Section::make('Responsável pelo contato')
+                ->schema([
+                    Select::make('owner_id')
+                    ->label('Responsável')
+                    ->relationship(
+                        'owner',
+                        'name',
+                        modifyQueryUsing: fn (Builder $query) => $query->whereHas('roles', fn ($q) => $q->where('name', 'vendedor')))
+                    ->searchable()
+                    ->preload()
+                    ->columnSpanfull(),
+                ])->columns(6),
+                Section::make('Informações pessoais')
                     ->schema([
                         TextInput::make('name')
                             ->label('Nome')
+                            ->required()
                             ->columnSpan(3),
                         TextInput::make('email')
                             ->label('Email')
@@ -56,31 +69,34 @@ class ContactResource extends Resource
                         TextInput::make('phone')
                             ->label('Telefone')
                             ->tel()
-                            ->columnSpan(3),
-                        Select::make('owner_id')
-                            ->label('Responsável')
-                            ->relationship('owner', 'name')
+                            ->required()
                             ->columnSpan(3),
                         RichEditor::make('description')
                             ->label('Descrição')
                             ->columnSpanFull(),
+
+
+                    ])->columns(6),
+                Section::make('Dados do Lead')
+                    ->schema([
                         Select::make('lead_source_id')
                             ->label('Origem')
+                            ->required()
                             ->relationship('leadSource', 'name')
-                            ->columnSpan(1),
+                            ->columnSpan(3),
                         Select::make('pipeline_stage_id')
                             ->label('Estágio do funil')
+                            ->required()
                             ->relationship('pipelineStage', 'name')
-                            ->columnSpan(1),
+                            ->columnSpan(3),
                         Select::make('tags')
                             ->label('Marcadores')
                             ->relationship('tags', 'name')
                             ->preload()
                             ->multiple()
-                            ->columnSpan(4),
+                            ->columnSpanFull(),
+                    ])->columns(6),
 
-                    ])
-                    ->columns(6)
             ]);
     }
 
@@ -120,8 +136,8 @@ class ContactResource extends Resource
             ->actions([
                 ActionGroup::make([
                     EditAction::make()
-                    ->label('Editar contato')
-                    ->color('info'),
+                        ->label('Editar contato')
+                        ->color('info'),
                     Action::make('notes')
                         ->label('Adicionar anotação')
                         ->icon('heroicon-m-clipboard-document-check')
@@ -176,6 +192,9 @@ class ContactResource extends Resource
                 ])
                     ->tooltip('Ações'),
             ])
+            ->recordUrl(function () {
+                return null;
+            })
             ->bulkActions([
                 // Tables\Actions\BulkActionGroup::make([
                 //     Tables\Actions\DeleteBulkAction::make()
